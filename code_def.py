@@ -42,8 +42,11 @@ def load_participants(path: str) -> List[Participant]:
         raise FileNotFoundError(f"The file {path} does not exist.")
     if pathlib.Path(path).suffix != ".json":
         raise ValueError(f"The file {path} is not a JSON file.")
-
-    return [Participant(**participant) for participant in json.load(open(path))]
+    
+    with open(path, "r") as f:
+        data = json.load(f)
+    
+    return [Participant(**participant) for participant in data]
 
 
 # Funciones de puntuación por experiencia y habilidades
