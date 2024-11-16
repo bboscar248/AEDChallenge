@@ -183,7 +183,7 @@ def group_win_by_availability_and_balance(participants: List[Participant], requi
 # Función principal para ejecutar el código
 def main():
     try:
-        participants = load_participants("participants.json")
+        participants = load_participants("prueba.json")
         
         # Agrupar por idiomas y tamaño de equipo
         language_groups = group_by_language(participants)
@@ -199,18 +199,18 @@ def main():
         required_periods = ["Saturday morning", "Saturday afternoon", "Saturday night", "Sunday morning", "Sunday afternoon"]
         win_groups = group_win_by_availability_and_balance(objective_groups["win"], required_periods)
         
-        # Imprimir los grupos
+        # Imprimir solo los nombres y IDs de los grupos
         print("Grupos de participantes que quieren aprender/fun/amigos:")
         for i, group in enumerate(learn_fun_groups):
-            print(f"  Grupo {i+1}:")
+            print(f"Grupo {i+1}:")
             for participant in group:
-                print(f"    - {participant.name} ({participant.preferred_languages}, {participant.objective})")
+                print(f"    - {participant.name} (ID: {participant.id})")
         
         print("\nGrupos de participantes que quieren ganar:")
         for i, group in enumerate(win_groups):
-            print(f"  Grupo {i+1}:")
+            print(f"Grupo {i+1}:")
             for participant in group:
-                print(f"    - {participant.name} ({participant.preferred_languages}, {participant.objective})")
+                print(f"    - {participant.name} (ID: {participant.id})")
     
     except (FileNotFoundError, ValueError) as e:
         print(f"Error: {e}")
