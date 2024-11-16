@@ -38,7 +38,7 @@ if __name__ == "__main__":
         
         # Classificar per nivell d'experiència
         experience_classifications = classify_participants_by_experience(participants)
-        print("Clasificación por nivel de experiencia:")
+        print("Classificació per nivell d'experiència:")
         display_classifications(experience_classifications)
 
         # Classificar per universitat
