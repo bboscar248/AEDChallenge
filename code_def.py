@@ -15,11 +15,26 @@ def load_participants(path: str) -> List[Participant]:
 
     return [Participant(**participant) for participant in json.load(open(path))]
 
-# 2. Función para agrupar participantes
+# 2. Función para obtener los puntos de experiencia
+def get_experience_points(participant: Participant) -> int:
+    """Asigna puntos según el nivel de experiencia del participante."""
+    experience_points = {
+        "Beginner": 1,
+        "Intermediate": 3,
+        "Advanced": 6
+    }
+    return experience_points.get(participant.experience_level, 0)
+
+# 3. Función para obtener los puntos totales de habilidades de programación
+def get_total_programming_skill(participant: Participant) -> int:
+    """Suma los puntos de habilidad de programación de un participante."""
+    return sum(participant.programming_skills.values())
+
+# 4. Función para agrupar participantes
 def group_participants(participants: List[Participant]) -> List[List[Participant]]:
     """Agrupa a los participantes según sus preferencias y objetivos."""
     
-    # 1. Agrupar por objetivos (ganar vs aprender/divertirse)
+    # 1. Separar los participantes por objetivo (ganar vs aprender/divertirse)
     win_objective = []
     learn_fun_objective = []
     
@@ -30,16 +45,16 @@ def group_participants(participants: List[Participant]) -> List[List[Participant
             learn_fun_objective.append(p)
 
     # 2. Agrupar a los que quieren ganar por nivel de experiencia
-    win_objective_sorted = sorted(win_objective, key=lambda p: p.get_experience_points(), reverse=True)
+    win_objective_sorted = sorted(win_objective, key=lambda p: get_experience_points(p), reverse=True)
     
     groups_win = []  # Lista final de grupos para los participantes que quieren ganar
     current_group = []
     current_experience_points = 0
 
     for p in win_objective_sorted:
-        p_experience = p.get_experience_points()
+        p_experience = get_experience_points(p)
         # Si la diferencia de puntos de experiencia excede los 6, crear un nuevo grupo
-        if current_group and current_experience_points + p_experience - min(p.get_experience_points() for p in current_group) > 6:
+        if current_group and current_experience_points + p_experience - min(get_experience_points(p) for p in current_group) > 6:
             groups_win.append(current_group)
             current_group = []
             current_experience_points = 0
@@ -51,16 +66,16 @@ def group_participants(participants: List[Participant]) -> List[List[Participant
     if current_group:
         groups_win.append(current_group)
 
-    # 3. Agrupar por habilidades de programación (diferencia no mayor a 5)
+    # 5. Agrupar por habilidades de programación (diferencia no mayor a 5)
     def group_by_programming_skills(groups: List[List[Participant]]) -> List[List[Participant]]:
         final_groups = []
         for group in groups:
             current_group = []
             current_skill_points = 0
             for p in group:
-                p_skills = p.get_total_programming_skill()
+                p_skills = get_total_programming_skill(p)
                 # Si la diferencia de puntos de habilidades excede los 5, iniciar un nuevo grupo
-                if current_group and abs(current_skill_points + p_skills - sum([x.get_total_programming_skill() for x in current_group])) > 5:
+                if current_group and abs(current_skill_points + p_skills - sum([get_total_programming_skill(x) for x in current_group])) > 5:
                     final_groups.append(current_group)
                     current_group = []
                     current_skill_points = 0
@@ -74,16 +89,16 @@ def group_participants(participants: List[Participant]) -> List[List[Participant
     
     groups_win = group_by_programming_skills(groups_win)
 
-    # 4. Si no se pueden cumplir las restricciones, intentar cambiar el tamaño de los equipos
+    # 6. Si no se pueden cumplir las restricciones, intentar cambiar el tamaño de los equipos
     def adjust_team_sizes(groups: List[List[Participant]]):
         for group in groups:
-            total_skill_points = sum(p.get_total_programming_skill() for p in group)
+            total_skill_points = sum(get_total_programming_skill(p) for p in group)
             if total_skill_points > 5:  # Si la diferencia es mayor a 5, pedir revisión
                 print(f"Group with total programming skill points exceeding the allowed difference. Consider changing preferred team size for this group.")
     
     adjust_team_sizes(groups_win)
 
-    # 5. Agrupar por intereses para los participantes de 'learn/fun'
+    # 7. Agrupar por intereses para los participantes de 'learn/fun'
     def group_by_interests(participants: List[Participant]) -> List[List[Participant]]:
         """Agrupa a los participantes por intereses similares."""
         interest_groups = defaultdict(list)
@@ -104,10 +119,10 @@ def group_participants(participants: List[Participant]) -> List[List[Participant
     # Agrupar a los que quieren aprender/divertirse por sus intereses
     learn_fun_groups = group_by_interests(learn_fun_objective)
 
-    # 6. Ahora tenemos los grupos de 'ganar' y 'aprender/divertirse' agrupados por intereses
+    # 8. Ahora tenemos los grupos de 'ganar' y 'aprender/divertirse' agrupados por intereses
     return groups_win, learn_fun_groups
 
-# 3. Función principal
+# 9. Función principal
 def main():
     try:
         participants = load_participants("participants.json")
