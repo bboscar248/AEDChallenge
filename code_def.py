@@ -49,7 +49,6 @@ def load_participants(path: str) -> List[Participant]:
 
 
 def get_experience_points(participant: Participant) -> int:
-    """Devuelve los puntos basados en el nivel de experiencia del participante."""
     experience_points = {
         "Beginner": 1,
         "Intermediate": 3,
@@ -174,7 +173,7 @@ def main():
             for participant in group:
                 print(f"    - {participant.name} (ID: {participant.id})")
         
-        
+
         print("\nGrupos that wanna win:")
         for i, group in enumerate(win_groups):
             print(f"Group {i+1}:")
