@@ -30,7 +30,7 @@ def get_total_programming_skill(participant: Participant) -> int:
     """Suma los puntos de habilidad de programación de un participante."""
     return sum(participant.programming_skills.values())
 
-# 4. Filtrar a los participantes por su disponibilidad (al menos 3 True en los períodos específicos)
+# 4. Filtrar por disponibilidad (al menos 3 períodos como 'True')
 def filter_by_availability(participants: List[Participant]) -> List[Participant]:
     """Filtra los participantes que tienen al menos 3 'True' en los períodos de disponibilidad especificados."""
     filtered_participants = []
@@ -40,129 +40,122 @@ def filter_by_availability(participants: List[Participant]) -> List[Participant]
     ]
     
     for p in participants:
-        # Contamos cuántos valores son True en 'availability' para los períodos especificados
         available_periods = sum(1 for period in required_periods if p.availability.get(period, False))
-        if available_periods >= 3:  # Al menos 3 períodos disponibles como True
+        if available_periods >= 3:
             filtered_participants.append(p)
     
     return filtered_participants
 
-# 5. Función para agrupar participantes
+# 5. Agrupar participantes por 'preferred_languages' y 'preferred_team_size'
 def group_participants(participants: List[Participant]) -> List[List[Participant]]:
-    """Agrupa a los participantes según sus preferencias y objetivos."""
-
-    # 1. Filtrar participantes por disponibilidad
-    participants = filter_by_availability(participants)
-
-    # 2. Separar los participantes por objetivo (ganar vs aprender/divertirse)
-    win_objective = []
-    learn_fun_objective = []
+    """Agrupa a los participantes según sus preferencias de idiomas y tamaño de equipo."""
+    language_size_groups = defaultdict(list)
     
     for p in participants:
-        if "win" in p.objective.lower() or "competition" in p.objective.lower() or "prize" in p.objective.lower():
-            win_objective.append(p)
-        else:
-            learn_fun_objective.append(p)
-
-    # 3. Agrupar a los que quieren ganar por nivel de experiencia
-    win_objective_sorted = sorted(win_objective, key=lambda p: get_experience_points(p), reverse=True)
+        language_size_groups[(p.preferred_languages, p.preferred_team_size)].append(p)
     
-    groups_win = []  # Lista final de grupos para los participantes que quieren ganar
+    return list(language_size_groups.values())
+
+# 6. Función para agrupar participantes que quieren aprender, hacer amigos o divertirse
+def group_learn_fun(participants: List[Participant]) -> List[List[Participant]]:
+    """Agrupa a los participantes que quieren aprender, hacer amigos o divertirse según intereses y amigos."""
+    interest_groups = defaultdict(list)
+    friend_groups = defaultdict(list)
+    
+    for p in participants:
+        for interest in p.interests:
+            interest_groups[interest].append(p)
+        for friend_id in p.friend_registration:
+            friend_groups[friend_id].append(p)
+    
+    final_groups = []
+    
+    # Agrupamos los que quieren aprender/fun según intereses y amigos
+    for group in interest_groups.values():
+        final_groups.append(group)
+    
+    # Si quedan participantes sin grupo, intentamos agregar amigos
+    for group in friend_groups.values():
+        if group:
+            final_groups.append(group)
+    
+    return final_groups
+
+# 7. Agrupar participantes que quieren ganar
+def group_win(participants: List[Participant]) -> List[List[Participant]]:
+    """Agrupa a los participantes que quieren ganar según disponibilidad, experiencia, habilidades y roles."""
+    available_participants = filter_by_availability(participants)
+    
+    win_groups = []
     current_group = []
     current_experience_points = 0
-
-    for p in win_objective_sorted:
-        p_experience = get_experience_points(p)
-        # Si la diferencia de puntos de experiencia excede los 6, crear un nuevo grupo
-        if current_group and current_experience_points + p_experience - min(get_experience_points(p) for p in current_group) > 6:
-            groups_win.append(current_group)
+    
+    for p in sorted(available_participants, key=lambda x: get_experience_points(x), reverse=True):
+        if current_group and (get_experience_points(p) - min(get_experience_points(p) for p in current_group)) > 6:
+            win_groups.append(current_group)
             current_group = []
             current_experience_points = 0
         
         current_group.append(p)
-        current_experience_points += p_experience
-
-    # Asegurarse de agregar el último grupo
+        current_experience_points += get_experience_points(p)
+    
     if current_group:
-        groups_win.append(current_group)
-
-    # 4. Agrupar por habilidades de programación (diferencia no mayor a 5)
-    def group_by_programming_skills(groups: List[List[Participant]]) -> List[List[Participant]]:
-        final_groups = []
-        for group in groups:
-            current_group = []
-            current_skill_points = 0
-            for p in group:
-                p_skills = get_total_programming_skill(p)
-                # Si la diferencia de puntos de habilidades excede los 5, iniciar un nuevo grupo
-                if current_group and abs(current_skill_points + p_skills - sum([get_total_programming_skill(x) for x in current_group])) > 5:
-                    final_groups.append(current_group)
-                    current_group = []
-                    current_skill_points = 0
-                current_group.append(p)
-                current_skill_points += p_skills
-            
-            if current_group:
-                final_groups.append(current_group)
-        
-        return final_groups
+        win_groups.append(current_group)
     
-    groups_win = group_by_programming_skills(groups_win)
-
-    # 5. Si no se pueden cumplir las restricciones, intentar cambiar el tamaño de los equipos
-    def adjust_team_sizes(groups: List[List[Participant]]):
-        for group in groups:
-            total_skill_points = sum(get_total_programming_skill(p) for p in group)
-            if total_skill_points > 5:  # Si la diferencia es mayor a 5, pedir revisión
-                print(f"Group with total programming skill points exceeding the allowed difference. Consider changing preferred team size for this group.")
+    final_win_groups = []
     
-    adjust_team_sizes(groups_win)
-
-    # 6. Agrupar por intereses para los participantes de 'learn/fun'
-    def group_by_interests(participants: List[Participant]) -> List[List[Participant]]:
-        """Agrupa a los participantes por intereses similares."""
-        interest_groups = defaultdict(list)
+    for group in win_groups:
+        current_group = []
+        current_skill_points = 0
+        for p in sorted(group, key=lambda x: get_total_programming_skill(x)):
+            if current_group and abs(current_skill_points + get_total_programming_skill(p) - sum(get_total_programming_skill(x) for x in current_group)) > 5:
+                final_win_groups.append(current_group)
+                current_group = []
+                current_skill_points = 0
+            current_group.append(p)
+            current_skill_points += get_total_programming_skill(p)
         
-        # Usamos un enfoque de coincidencia de intereses para agrupar a los participantes
-        for p in participants:
-            for interest in p.interests:
-                interest_groups[interest].append(p)
-        
-        # Crear grupos de participantes con intereses similares
-        final_groups = []
-        for group in interest_groups.values():
-            # Puedes aplicar más lógica para dividir los grupos si son demasiado grandes.
-            final_groups.append(group)
-        
-        return final_groups
+        if current_group:
+            final_win_groups.append(current_group)
+    
+    return final_win_groups
 
-    # Agrupar a los que quieren aprender/divertirse por sus intereses
-    learn_fun_groups = group_by_interests(learn_fun_objective)
-
-    # 7. Ahora tenemos los grupos de 'ganar' y 'aprender/divertirse' agrupados por intereses
-    return groups_win, learn_fun_groups
-
-# 8. Función principal
+# 8. Función principal para agrupar participantes
 def main():
     try:
         participants = load_participants("participants.json")
-        groups_win, learn_fun_groups = group_participants(participants)
+        groups = group_participants(participants)
         
-        print("Win Objective Groups:")
-        for i, group in enumerate(groups_win):
-            print(f"Group {i+1}:")
+        # Primera etapa: agrupar por preferencias de idioma y tamaño de equipo
+        for group in groups:
+            win_objective, learn_fun_objective = [], []
             for participant in group:
-                print(f"  - {participant.name} ({participant.preferred_languages}, {participant.objective})")
-        
-        print("\nLearn/Fun Objective Groups:")
-        for i, group in enumerate(learn_fun_groups):
-            print(f"Group {i+1}:")
-            for participant in group:
-                print(f"  - {participant.name} ({participant.interests}, {participant.objective})")
+                if "win" in participant.objective.lower():
+                    win_objective.append(participant)
+                else:
+                    learn_fun_objective.append(participant)
+            
+            # Agrupar participantes que quieren aprender, hacer amigos o divertirse
+            learn_fun_groups = group_learn_fun(learn_fun_objective)
+            
+            print("\nGrupo de aprender, amigos o diversión:")
+            for i, group in enumerate(learn_fun_groups):
+                print(f"Grupo {i+1}:")
+                for participant in group:
+                    print(f"  - {participant.name} ({participant.interests}, {participant.objective})")
+            
+            # Agrupar participantes que quieren ganar
+            win_groups = group_win(win_objective)
+            
+            print("\nGrupo de ganar:")
+            for i, group in enumerate(win_groups):
+                print(f"Grupo {i+1}:")
+                for participant in group:
+                    print(f"  - {participant.name} ({participant.preferred_languages}, {participant.objective})")
     
     except (FileNotFoundError, ValueError) as e:
         print(f"Error: {e}")
 
-# Asegurarse de que la función main se ejecute solo si es el script principal
+# Ejecuta solo si es el script principal
 if __name__ == "__main__":
     main()
