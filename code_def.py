@@ -174,7 +174,7 @@ def group_win_by_availability_and_balance(participants: List[Participant], requi
 # Función principal para ejecutar el código
 def main():
     try:
-        participants = load_participants("participants.json")
+        participants = load_participants("prueba.json")
         
         # Agrupar por tamaño de equipo preferido
         team_size_groups = group_by_preferred_team_size(participants)
