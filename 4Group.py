@@ -1,80 +1,86 @@
 from participant import Participant, load_participants
-from typing import List, Dict
+from typing import List
 from itertools import combinations
 
-def calculate_similarity_score(p1: Participant, p2: Participant) -> int:
+def calcula_puntuacio_similitud(p1: Participant, p2: Participant) -> int:
     """
-    Calcula un puntaje de similitud entre dos participantes basado en intereses,
-    habilidades y nivel de experiencia.
+    Calcula una puntuació de similitud entre dos participants basada en interessos,
+    habilitats i nivell d'experiència.
     """
-    score = 0
+    puntuacio = 0
     
-    # Comparar nivel de experiencia
+    # Comparar nivell d'experiència
     if p1.experience_level == p2.experience_level:
-        score += 3
+        puntuacio += 3
 
-    # Comparar intereses
-    common_interests = set(p1.interests) & set(p2.interests)
-    score += len(common_interests)
+    # Comparar interessos
+    interessos_comuns = set(p1.interests) & set(p2.interests)
+    puntuacio += len(interessos_comuns)
 
-    # Comparar habilidades de programación
-    common_skills = set(p1.programming_skills.keys()) & set(p2.programming_skills.keys())
-    score += len(common_skills)
+    # Comparar habilitats de programació
+    habilitats_comunes = set(p1.programming_skills.keys()) & set(p2.programming_skills.keys())
+    puntuacio += len(habilitats_comunes)
     
-    return score
+    return puntuacio
 
-def group_participants(participants: List[Participant]) -> List[List[Participant]]:
+def agrupa_participants_flexible(participants: List[Participant], tamanys_grups: List[int]) -> List[List[Participant]]:
     """
-    Agrupa a los participantes en equipos de 4 con base en la similitud.
+    Agrupa els participants en equips flexibles segons els tamanys indicats.
     """
-    if len(participants) < 4:
-        raise ValueError("Debe haber al menos 4 participantes para formar equipos.")
-    
-    teams = []
-    used = set()
+    if not participants:
+        return []
 
-    # Ordenar las combinaciones según el puntaje de similitud
-    for combo in combinations(participants, 4):
-        if any(p.id in used for p in combo):
-            continue
+    equips = []
+    usats = set()
 
-        # Calcular el puntaje promedio del grupo
-        score = sum(calculate_similarity_score(p1, p2) for p1, p2 in combinations(combo, 2))
-        teams.append((combo, score))
+    for tamany in tamanys_grups:
+        possibles_equips = [
+            combo for combo in combinations(participants, tamany)
+            if all(p.id not in usats for p in combo)
+        ]
+        
+        # Ordenar possibles grups per puntuació de similitud
+        equips_puntuats = [
+            (equip, sum(calcula_puntuacio_similitud(p1, p2) for p1, p2 in combinations(equip, 2)))
+            for equip in possibles_equips
+        ]
+        equips_puntuats.sort(key=lambda x: -x[1])  # Ordenar per puntuació descendent
+        
+        for equip, _ in equips_puntuats:
+            if all(p.id not in usats for p in equip):
+                equips.append(list(equip))
+                usats.update(p.id for p in equip)
+                break  # Només agafar el millor grup en aquesta iteració
 
-    # Ordenar grupos por puntaje y seleccionar los mejores equipos
-    teams.sort(key=lambda x: -x[1])  # Ordenar por puntaje descendente
-    final_teams = []
+    # Assignar els participants restants que no s'han pogut agrupar
+    restants = [p for p in participants if p.id not in usats]
+    for p in restants:
+        equips.append([p])  # Grups d'1 si no hi ha altres opcions
 
-    for team, _ in teams:
-        if all(p.id not in used for p in team):
-            final_teams.append(list(team))
-            used.update(p.id for p in team)
+    return equips
 
-        if len(used) == len(participants):  # Si todos están en un equipo, detenemos
-            break
-
-    return final_teams
-
-def display_teams(teams: List[List[Participant]]):
+def mostra_equips(equips: List[List[Participant]]):
     """
-    Imprime los equipos formados.
+    Mostra els equips formats.
     """
-    for i, team in enumerate(teams, 1):
-        print(f"\nEquipo {i}:")
-        for participant in team:
+    for i, equip in enumerate(equips, 1):
+        print(f"\nEquip {i}:")
+        for participant in equip:
             print(f"- {participant.name} ({participant.email}) - {participant.university}")
 
 if __name__ == "__main__":
     try:
-        # Cargar los participantes desde el archivo JSON
+        # Carregar els participants des del fitxer JSON
         participants = load_participants("participants.json")
+        
+        # Definir els tamanys possibles dels grups
+        tamanys_grups = [4, 3, 2]  # Prioritzar grups de 4, després de 3 i després de 2
 
-        # Formar equipos
-        teams = group_participants(participants)
+        # Formar equips flexibles
+        equips = agrupa_participants_flexible(participants, tamanys_grups)
 
-        # Mostrar los equipos
-        display_teams(teams)
+        # Mostrar els equips
+        mostra_equips(equips)
 
     except Exception as e:
         print(f"Error: {e}")
