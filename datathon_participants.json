@@ -1,0 +1,1571 @@
+[
+    {
+        "id": "2ebad15c-c0ef-4c04-ba98-c5d98403a90c",
+        "name": "Sara Vilar",
+        "email": "sara_vilar@gmail.com",
+        "age": 21,
+        "year_of_study": "4th year",
+        "shirt_size": "S",
+        "university": "Universitat Internacional de Catalunya (UIC)",
+        "dietary_restrictions": "None",
+        "interests": [
+            "Fintech",
+            "Blockchain",
+            "Cybersecurity",
+            "Productivity"
+        ],
+        "preferred_role": "Design",
+        "experience_level": "Intermediate",
+        "hackathons_done": 2,
+        "objective": "I'm super stoked to be participating in this datathon! My goal is to soak up the vibes, learn from others, and have an absolute blast. I want to join in on as many events and workshops as I can, learn new skills and insights, and make friends with like-minded peeps. I'm more about having fun and making connections than about trying to win (although, I do love a good challenge!). My objective is to leave this datathon feeling refreshed, inspired, and with new friendships to look back on. Bring it on!",
+        "introduction": "Hi there! I'm Sara, and I'm super excited to be here at the datathon. As a university student, I'm always looking for new challenges and ways to learn. I've got a background in programming and love fiddling with coding - whether it's building something new or just solving problems. I'm all about creative solutions and finding innovative ways to get things done. Outside of code, you can find me exploring fintech, blockchain, and cybersecurity. I'm looking forward to meeting other curious and ambitious folks and having an amazing time here at the datathon!",
+        "technical_project": "One project that really got me excited was building a personal finance tracker using Flask and MongoDB! I love fintech, and being able to create something that actually helps people manage their finances was super rewarding. I built a simple app that allowed users to track their expenses, income, and even set budgets for themselves. The best part was learning how to work with MongoDB, which was a new experience for me. It was amazing to see the project come together, and now I actually use it to track my own finances!",
+        "future_excitement": "The future is so exciting! As I look ahead, I'm thrilled to think about the innovative projects I'll be a part of. I've always been fascinated by the potential of fintech to revolutionize the way we manage our money and interact with financial institutions. In the next 10 years, I dream of being part of a startup that develops a decentralized banking system built on blockchain technology. Imagine having control over your finances, being able to securely share information and transfer funds with ease. The possibilities are endless, and I can't wait to be a part of shaping this future.",
+        "fun_fact": "Hey there! When I'm not coding, I love to belt out my favorite rock ballads in the shower. My friends even call me the 'Queen of Shower Riffs.' Nothing gets me pumped up like a little Ariana Grande and some foggy mirrors",
+        "preferred_languages": [
+            "English",
+            "Catalan"
+        ],
+        "friend_registration": [],
+        "preferred_team_size": 4,
+        "availability": {
+            "Saturday morning": true,
+            "Saturday afternoon": true,
+            "Saturday night": false,
+            "Sunday morning": true,
+            "Sunday afternoon": true
+        },
+        "programming_skills": {
+            "Data Visualization": 2,
+            "Flask": 4,
+            "React Native": 6,
+            "UI/UX Design": 3,
+            "TypeScript": 3,
+            "Git": 2,
+            "React": 5,
+            "MongoDB": 2,
+            "HTML/CSS": 5
+        },
+        "interest_in_challenges": [
+            "Mango Challenge",
+            "Restb.ai Challenge",
+            "AED Challenge"
+        ]
+    },
+    {
+        "id": "a00428a2-14a2-4fb1-838a-22394778ec88",
+        "name": "Aurora Wells",
+        "email": "aurora_wells@gmail.com",
+        "age": 20,
+        "year_of_study": "3rd year",
+        "shirt_size": "L",
+        "university": "Universitat Pompeu Fabra (UPF)",
+        "dietary_restrictions": "Vegetarian",
+        "interests": [
+            "Productivity",
+            "Enterprise",
+            "DevOps",
+            "Health",
+            "Robotic Process Automation",
+            "AR/VR"
+        ],
+        "preferred_role": "Analysis",
+        "experience_level": "Intermediate",
+        "hackathons_done": 5,
+        "objective": "For me, this datathon is all about leveling up my skills. As a third-year student, I'm looking to dive deeper into data analysis and visualization, and this is the perfect opportunity to learn from industry experts and get hands-on experience. My goal is to take what I learn here and apply it to my final year project, so I can walk away with some concrete skills that I can use in my future career. I'm not too fussed about the competition, but I am excited to challenge myself and come away feeling more confident in my abilities.",
+        "introduction": "Hey everyone! I'm Aurora, a 20-year-old student on a mission to upgrade my data skills. In my third year, I'm eager to dive deeper into data analysis and visualization. This datathon is the perfect chance for me to learn from industry experts and get hands-on experience. My goal is to apply what I learn to my final year project, making a concrete difference. I'm looking forward to a challenging yet fun weekend, meeting new people, and taking my skills to the next level. See you around!",
+        "technical_project": "I loved working on a productivity workflow optimization project for a college club I'm part of. We were using a cumbersome Google Sheets system to track event planning, and I decided to build a sleek React app with PostgreSQL database to streamline our processes. I also designed a user-friendly interface with Figma, making it super easy for members to add events, RSVP, and view upcoming activities. It was awesome to see our team's reaction when they saw the app in action - it genuinely improved our workflow and saved us hours of time. I'd love to build more projects like this!",
+        "future_excitement": "As I imagine my future, I'm thrilled to think about the possibility of working on a revolutionary healthcare system that utilizes AI and AR/VR to revolutionize patient outcomes. I envision a seamless integration of data analysis, automation, and personalized medicine, allowing doctors and healthcare professionals to make data-driven decisions and providing patients with tailored treatments and rehabilitation programs. I'd love to be part of a team that pioneers this kind of innovative thinking, leveraging technology to make a meaningful difference in people's lives.",
+        "fun_fact": "Hey there! When I'm not coding away, I love experimenting with AR/VR and sketching futuristic designs in Figma. Fun fact: I once built a prototype for a smart kitchen utensil that uses AI-powered recipe suggestion - my family loved being my 'human test subjects'.",
+        "preferred_languages": [
+            "English"
+        ],
+        "friend_registration": [],
+        "preferred_team_size": 3,
+        "availability": {
+            "Saturday morning": true,
+            "Saturday afternoon": false,
+            "Saturday night": true,
+            "Sunday morning": false,
+            "Sunday afternoon": true
+        },
+        "programming_skills": {
+            "React": 4,
+            "PostgreSQL": 5,
+            "Figma": 7,
+            "SQL": 2
+        },
+        "interest_in_challenges": [
+            "AED Challenge",
+            "Mango Challenge",
+            "Restb.ai Challenge"
+        ]
+    },
+    {
+        "id": "ab4b5790-0e6b-43db-bbaa-8670554f0cc8",
+        "name": "Ana\u00efs Giacomo",
+        "email": "anas_giacomo@outlook.com",
+        "age": 21,
+        "year_of_study": "3rd year",
+        "shirt_size": "M",
+        "university": "Universidad de Sevilla",
+        "dietary_restrictions": "None",
+        "interests": [
+            "Lifehacks",
+            "Health",
+            "Cybersecurity",
+            "Communication",
+            "Music/Art",
+            "DevOps"
+        ],
+        "preferred_role": "Analysis",
+        "experience_level": "Intermediate",
+        "hackathons_done": 2,
+        "objective": "Hey! I'm Ana\u00efs, and I'm all about growth and learning. For this datathon, I'm aiming to dive deep into new programming languages and data analytics tools. I'm eager to learn from others, attend workshops and mentorship sessions, and absorb as much knowledge as I can. My objective is to improve my skills, expand my repertoire, and take away practical experiences that I can apply to my upcoming projects and career. I'm not worried about competing; I'm more focused on fostering connections and exchanging ideas to become a better developer.",
+        "introduction": "Hey there! I'm Ana\u00efs, a third-year student with a passion for learning and growth. When I'm not busy with coursework, I love diving into new programming languages and data analytics tools. This datathon is all about exploring and getting my hands dirty. I'm looking forward to workshops, mentorship sessions, and meeting like-minded folks who share my enthusiasm. I'm not a competitive type, but rather someone who craves connection and knowledge sharing. I'm excited to see where this journey takes me and what new skills I can bring back to my projects and career. Let's do this!",
+        "technical_project": "Oh, I just loved working on a project where I used computer vision to build a sign language recognition system! As a linguistics minor, I've always been fascinated by languages, and sign language holds a special place in my heart. I used TensorFlow to train a model that could detect and recognize hand gestures, and it was incredibly rewarding to see it in action. I worked with a group of friends, and it was amazing to see how our diverse skills and interests came together to create something really cool. We even pitched it to a local organization that supports deaf students!",
+        "future_excitement": "I'm genuinely excited to work on developing AI-powered systems that enhance accessibility and quality of life for people with disabilities. As someone who's passionate about cybersecurity and health, I envision using machine learning to create smart, adaptive technology that predicts and prevents chronic illnesses, improving patient outcomes and caregiver efficiency. I'd love to collaborate with cross-functional teams to integrate artificial intelligence with biomedical engineering, and work towards empowering individuals with unique abilities to take control of their health and wellbeing. It's an ambitious goal, but I'm convinced that the next decade will be an era of exponential breakthroughs in healthcare AI.",
+        "fun_fact": "Hey! When I'm not coding, you can catch me singing in my car or belting out show tunes with friends. My go-to genre is musical theater, and I can often be found scoping out local productions. Who knew lifehacks and musicals would intersect in a 21-year-old coding newbie?",
+        "preferred_languages": [
+            "English",
+            "Spanish",
+            "French",
+            "German",
+            "Italian"
+        ],
+        "friend_registration": [],
+        "preferred_team_size": 4,
+        "availability": {
+            "Saturday morning": true,
+            "Saturday afternoon": true,
+            "Saturday night": true,
+            "Sunday morning": true,
+            "Sunday afternoon": true
+        },
+        "programming_skills": {
+            "PostgreSQL": 4,
+            "TensorFlow": 5,
+            "Computer Vision": 6,
+            "Agile Methodology": 3
+        },
+        "interest_in_challenges": [
+            "Restb.ai Challenge",
+            "Mango Challenge",
+            "AED Challenge"
+        ]
+    },
+    {
+        "id": "cda2fafe-4b1e-4581-9fe0-1fb6d3e79aa3",
+        "name": "Luna Sol\u00e0.",
+        "email": "luna_sol.@yahoo.com",
+        "age": 21,
+        "year_of_study": "3rd year",
+        "shirt_size": "L",
+        "university": "Universitat Internacional de Catalunya (UIC)",
+        "dietary_restrictions": "None",
+        "interests": [
+            "Mobile",
+            "Cybersecurity",
+            "Quantum",
+            "E-commerce/Retail",
+            "Music/Art",
+            "Blockchain",
+            "Robotic Process Automation"
+        ],
+        "preferred_role": "Design",
+        "experience_level": "Intermediate",
+        "hackathons_done": 2,
+        "objective": "I'm all about leveling up my skills at this datathon! My goal is to dive deeper into machine learning and AI, and come out with tangible projects that demonstrate my growth. I'm not too worried about winning; I'd rather focus on learning from others, taking calculated risks, and pushing myself outside of my comfort zone. I'm excited to learn from the experts, get feedback on my work, and maybe even discover new areas of interest. Bring on the data and the challenges - I'm ready to soak it all in and come out a better developer on the other side!",
+        "introduction": "Hey! I'm Luna, a third-year student with a passion for pushing tech boundaries. I've dabbled in programming for a while now, but I'm eager to level up my skills and dive deeper into machine learning and AI. I'm a curious and creative problem solver, always looking for ways to combine my loves of art and technology. I'm excited to join this datathon, not just to learn from the best, but also to share my ideas and collaborate with fellow data enthusiasts. Bring on the data - I'm ready to get creative and see where it takes me!",
+        "technical_project": "I once built a blockchain-based music sharing platform called Melodia. I'm a huge music lover, and I wanted to explore blockchain technology, so I combined my two passions. Users could upload and share their own music, and the platform would track royalties and artist credits. I used Figma for the UI design, and MongoDB for the database. I also experimented with Smart Contracts on Ethereum to manage the distribution of digital assets. Working on Melodia allowed me to learn about blockchain, while also bringing a unique idea to life. It was a blast, and I love sharing it with fellow music enthusiasts!",
+        "future_excitement": "I'm really stoked to dive into the realm of quantum-inspired machine learning and its potential applications in e-commerce and retail. I'd love to develop a personalized shopping experience for customers using quantum-inspired models that can learn from user behavior, recommending products that cater to their unique preferences. The idea of harnessing quantum computing's power to simulate complex patterns and optimize inventory management excites me. It's a challenging but thrilling prospect that could revolutionize the retail industry. Who knows, maybe one day we'll see quantum-enabled recommendation systems that change the game!",
+        "fun_fact": "Who would've thought a programming newbie like me has a secret talent? I used to compose electronic music and create ASCII art! When I'm not coding, I jam out to synths and experiment with generative music - it's a great way to relax and fuel my creativity!",
+        "preferred_languages": [
+            "English",
+            "Catalan"
+        ],
+        "friend_registration": [
+            "13a8194a-79a9-4004-8711-e6d89efa0014",
+            "2a4877f6-c699-46a6-971f-1d1c75977ae8"
+        ],
+        "preferred_team_size": 4,
+        "availability": {
+            "Saturday morning": true,
+            "Saturday afternoon": true,
+            "Saturday night": false,
+            "Sunday morning": true,
+            "Sunday afternoon": true
+        },
+        "programming_skills": {
+            "IoT": 4,
+            "HTML/CSS": 6,
+            "MongoDB": 5,
+            "Blockchain": 6,
+            "AWS/Azure/GCP": 2,
+            "Figma": 6
+        },
+        "interest_in_challenges": [
+            "Restb.ai Challenge",
+            "AED Challenge",
+            "Mango Challenge"
+        ]
+    },
+    {
+        "id": "624f4677-d31a-4ecf-a7de-5df7392f9579",
+        "name": "Evelyn Winters",
+        "email": "evelyn_winters@outlook.com",
+        "age": 20,
+        "year_of_study": "3rd year",
+        "shirt_size": "S",
+        "university": "Universitat Polit\u00e8cnica de Catalunya (UPC)",
+        "dietary_restrictions": "None",
+        "interests": [
+            "Quantum",
+            "Fintech",
+            "Blockchain",
+            "DevOps",
+            "Lifehacks",
+            "Cybersecurity",
+            "E-commerce/Retail",
+            "Gaming",
+            "IoT"
+        ],
+        "preferred_role": "Design",
+        "experience_level": "Intermediate",
+        "hackathons_done": 2,
+        "objective": "I'm coming to this datathon to put my skills to the test and bring home that first-place trophy! I've got my eyes set on the prize and I'm not leaving until I win. I've honed my coding skills in hackathons before, and I'm ready to take on new challenges and push myself to the limit. My main goal is to come out on top, no matter what it takes. If that means sacrificing some fun to perfect my craft, then so be it. I'm all about competitive success - that's what gets my adrenaline pumping and my heart racing.",
+        "introduction": "Hey there! I'm Evelyn Winters, a third-year student with a thirst for coding challenges. In my free time, I love dabbling in tech trends like quantum computing and blockchain. But make no mistake, I'm all about competition. I thrive under pressure, whether it's a hackathon or a datathon. My friends would describe me as determined, driven, and maybe a little bit too intense. When I'm not coding, you can find me exploring new gaming genres or tinkering with IoT projects. I'm here to push myself to the limit and bring home that winning trophy!",
+        "technical_project": "One of my favorite projects was a computer vision-based cat/dog classifier I built for a hackathon. I was stoked to apply my knowledge of TensorFlow and Python to create an AI that could identify felines and canines. I gathered a dataset of images and trained the model using Flask. The project was a blast because it combined my love for animals, coding, and machine learning. I even named my project Pawsome Classifier! Seeing it successfully recognize pictures of cats and dogs was an awesome feeling. It's moments like those that remind me why I love what I do.",
+        "future_excitement": "I'm thrilled to see my passion for quantum computing materialize into tangible projects in the next decade. My dream is to develop a scalable, secure, and efficient quantum-powered payment system that can revolutionize the fintech industry. I envision a blockchain-based platform that leverages the extraordinary processing capabilities of quantum computers to facilitate rapid and transparent transactions. Imagine being able to settle international trades in mere seconds, while ensuring maximum security against cyber threats. It's an audacious goal, but one that aligns perfectly with my strengths in computer vision, IoT, and data engineering. Bring it on!",
+        "fun_fact": "I'm a closet artist! When I'm not geeking out over code, I love to unleash my creative side through digital drawing. My alter ego is @WintersWilds, and I've won a few hacking art challenges online - who knew coding and art went hand-in-hand?",
+        "preferred_languages": [
+            "English"
+        ],
+        "friend_registration": [],
+        "preferred_team_size": 4,
+        "availability": {
+            "Saturday morning": true,
+            "Saturday afternoon": true,
+            "Saturday night": true,
+            "Sunday morning": true,
+            "Sunday afternoon": true
+        },
+        "programming_skills": {
+            "iOS Development": 2,
+            "Flask": 6,
+            "TensorFlow": 2,
+            "AWS/Azure/GCP": 3,
+            "SQL": 2,
+            "Computer Vision": 4,
+            "MongoDB": 2,
+            "JavaScript": 6
+        },
+        "interest_in_challenges": [
+            "Restb.ai Challenge",
+            "AED Challenge",
+            "Mango Challenge"
+        ]
+    },
+    {
+        "id": "e3464b47-0c0a-41d7-9750-a21adb889205",
+        "name": "Emily Rachel Winston",
+        "email": "emily_rachel_winston@gmail.com",
+        "age": 20,
+        "year_of_study": "3rd year",
+        "shirt_size": "S",
+        "university": "Universitat Pompeu Fabra (UPF)",
+        "dietary_restrictions": "None",
+        "interests": [
+            "Robotic Process Automation",
+            "E-commerce/Retail",
+            "Machine Learning/AI",
+            "Quantum"
+        ],
+        "preferred_role": "Design",
+        "experience_level": "Intermediate",
+        "hackathons_done": 4,
+        "objective": "For me, it's all about growth and development. I'm looking to push my programming skills to the next level and expand my knowledge in areas I'm not too familiar with. I want to take advantage of the resources and expertise available during the datathon to improve my coding chops and get feedback from experienced mentors. My objective is to tackle complex challenges, learn from mistakes, and come out of this event feeling more confident and prepared to tackle real-world projects. Bring on the coding challenges!",
+        "introduction": "Hey there! I'm Emily, a 20-year-old third-year student with a passion for coding and problem-solving. I've been working with Python and PyTorch, and I'm eager to apply my skills to tackle new challenges. As a tech enthusiast, I'm intrigued by the possibilities of Robotic Process Automation and Machine Learning/AI. With the datathon, I'm hoping to push my programming boundaries, learn from others, and gain confidence in tackling real-world projects. I'm all about growth and development, and I'm excited to be a part of this adventure!",
+        "technical_project": "I've always had a blast working on a group project to develop an e-commerce platform using React and Python. We built a full-fledged online store from scratch, complete with inventory management, payment processing, and user authentication. I was responsible for handling the backend API, using PyTorch to train a recommendation algorithm. Seeing our creation come to life, with users interacting and making purchases, was incredibly fulfilling. The experience taught me so much about agile development, collaboration, and problem-solving under pressure. Plus, it was amazing to see how our creation impacted real customers' experiences!",
+        "future_excitement": "The future is bright! In the next 10 years, I'm excited to work on making quantum computing a reality for the retail industry. I've always been fascinated by the potential of quantum to revolutionize supply chain management and optimize inventory tracking. Imagine being able to accurately predict demand and auto-reorder products in real-time, reducing waste and increasing customer satisfaction. I'd love to collaborate with experts to develop quantum-based solutions for e-commerce giants, and see the impact it could have on the global retail landscape. It's a daunting task, but I'm ready to learn, adapt, and make it happen!",
+        "fun_fact": "When I'm not coding, you can find me practicing my yoga flows or busting a move on the dance floor! I've even competed in a few hackathons while rocking out to my fave Spotify playlists - it's all about maximizing productivity and having a blast, right?",
+        "preferred_languages": [
+            "English"
+        ],
+        "friend_registration": [],
+        "preferred_team_size": 4,
+        "availability": {
+            "Saturday morning": true,
+            "Saturday afternoon": true,
+            "Saturday night": true,
+            "Sunday morning": false,
+            "Sunday afternoon": true
+        },
+        "programming_skills": {
+            "SQL": 6,
+            "Blockchain": 3,
+            "pytorch": 4,
+            "python": 4,
+            "Agile": 7,
+            "android": 4,
+            "react": 5
+        },
+        "interest_in_challenges": [
+            "Restb.ai Challenge",
+            "AED Challenge",
+            "Mango Challenge"
+        ]
+    },
+    {
+        "id": "97a555b7-99a5-4a5e-8f47-631d5507e25a",
+        "name": "Ruby Wynter",
+        "email": "ruby_wynter@outlook.com",
+        "age": 22,
+        "year_of_study": "4th year",
+        "shirt_size": "M",
+        "university": "Universitat Internacional de Catalunya (UIC)",
+        "dietary_restrictions": "Vegetarian",
+        "interests": [
+            "Mobile",
+            "Fintech",
+            "Lifehacks"
+        ],
+        "preferred_role": "Development",
+        "experience_level": "Intermediate",
+        "hackathons_done": 3,
+        "objective": "Hey there! I'm Ruby, and my objective for this datathon is all about having a blast! I'm looking forward to making some awesome new friends and connections in the datathon community. I want to participate in as many events and activities as possible, whether it's a workshop, a meetup, or even just grabbing food with fellow participants. I'm all about soaking up the atmosphere and having a fun, stress-free experience. If I learn some new skills or make meaningful connections along the way, that's just the icing on the cake!",
+        "introduction": "Hey there! I'm Ruby Wynter, a 22-year-old student looking to kick back and have a blast at this datathon! I'm all about connecting with like-minded folks and taking in the vibe of this awesome community. As an intermediate programmer, I've dabbled in mobile dev and AI, and I'm excited to see what I can learn and discover with y'all. I'm a laid-back type who thrives in environments that are full of creativity and enthusiasm. Let's grab coffee, attend some workshops, and make some unforgettable memories together!",
+        "technical_project": "I had a blast working on a personal project where I built a task management app using Flutter. I've always been a big fan of Todoist and tried to replicate its functionality with a more personalized touch. I spent hours designing the UI in Figma and was thrilled to see it come to life on my phone. Although it's still a work in progress, I love using it to keep track of my daily tasks and habits. It's been a great learning experience and has made me a more organized student. Can't wait to expand its features!",
+        "future_excitement": "As a budding fintech enthusiast, I'm thrilled about the prospect of creating a mobile application that utilizes artificial intelligence to revolutionize personal finance management. Imagine an app that uses machine learning algorithms, fueled by open-source data, to offer users personalized budgeting advice and investment strategies. My ultimate goal is to make this app a go-to platform for people of all financial backgrounds, empowering them to take control of their financial futures. I'm excited to explore the opportunities this project presents, and who knows, maybe one day it'll be a household name!",
+        "fun_fact": "Here's a fun fact about me! I'm a total closet musician! When I'm not coding, you can catch me strumming my guitar or belting out my favorite karaoke jams. Give me a challenge and I'll even compose a sick rap about data visualization!",
+        "preferred_languages": [
+            "English"
+        ],
+        "friend_registration": [],
+        "preferred_team_size": 4,
+        "availability": {
+            "Saturday morning": true,
+            "Saturday afternoon": true,
+            "Saturday night": true,
+            "Sunday morning": true,
+            "Sunday afternoon": true
+        },
+        "programming_skills": {
+            "iOS Development": 4,
+            "TensorFlow": 4,
+            "Rust": 7,
+            "Flutter": 5,
+            "Figma": 7
+        },
+        "interest_in_challenges": [
+            "Mango Challenge",
+            "AED Challenge",
+            "Restb.ai Challenge"
+        ]
+    },
+    {
+        "id": "725b1704-4da0-423d-b51a-b465f2a41906",
+        "name": "Ana Isabel Serran\u0303o.",
+        "email": "ana_isabel_serrano.@gmail.com",
+        "age": 18,
+        "year_of_study": "2nd year",
+        "shirt_size": "M",
+        "university": "Universitat Polit\u00e8cnica de Catalunya (UPC)",
+        "dietary_restrictions": "Vegetarian",
+        "interests": [
+            "Machine Learning/AI",
+            "Communication",
+            "IoT",
+            "Health",
+            "E-commerce/Retail"
+        ],
+        "preferred_role": "Development",
+        "experience_level": "Intermediate",
+        "hackathons_done": 5,
+        "objective": "Here's my brief objective:\n\nMy goal for this datathon is to come out on top. I'm a competitor at heart, and the thrill of winning is what drives me. I've been involved in five hackathons so far, and I know what it takes to produce a winning project. I'm eager to take on the challenge, outdo my peers, and take home the top prize. I'll be putting in long hours, pushing myself to think creatively, and seeking out mentors and feedback to help me perfect my project. Let's get this win!",
+        "introduction": "Hey there! I'm Ana Isabel Serrano, a young and ambitious second-year student. I'm passionate about solving real-world problems with innovative solutions, and I'm always up for a challenge. Throughout my academic journey, I've had the opportunity to delve into various aspects of tech, from building iOS apps to designing user interfaces. I've also had the chance to explore AI and machine learning. I'm confident in my abilities, and my ultimate goal is to walk away with the top prize. When I'm not busy with school, you can find me exploring the world of IoT and retail.",
+        "technical_project": "I loved working on a project that combined my passions for Machine Learning and Health! I created a virtual wellness coach using a Raspberry Pi, IoT sensors, and machine learning algorithms. Users could input their fitness goals and daily activities, and the coach would provide personalized suggestions for improvement. It was awesome seeing how the system improved user engagement and behavior. What made it even more enjoyable was working on the UI/UX design and iOS app development for the coach's dashboard. It was a fantastic blend of technical and creative work that let me merge my diverse interests.",
+        "future_excitement": "I'm thrilled to share that I'm fascinated by the possibilities of integrating AI with telemedicine! In the next 10 years, I envision creating an AI-powered medical triage system that can diagnose and treat patients remotely. This system would utilize computer vision, natural language processing, and machine learning algorithms to analyze patients' medical records, symptoms, and other factors to provide personalized treatment plans. I believe this technology could revolutionize healthcare, making quality care more accessible and efficient.",
+        "fun_fact": "I'm a total thrill-seeker! In my free time, I love going skydiving with friends (don't worry, we're a safe crew)! We even have a motto: When in doubt, go sky-high! It's an adrenaline rush like no other, and it definitely helps me approach problems with a bold and fearless mindset.",
+        "preferred_languages": [
+            "English",
+            "Catalan",
+            "Spanish"
+        ],
+        "friend_registration": [
+            "ae5a6bbe-8911-4195-9589-4ce25d6ddc8e",
+            "b8d50918-f0b5-4452-aae3-c097eafd99ab"
+        ],
+        "preferred_team_size": 4,
+        "availability": {
+            "Saturday morning": true,
+            "Saturday afternoon": true,
+            "Saturday night": false,
+            "Sunday morning": true,
+            "Sunday afternoon": true
+        },
+        "programming_skills": {
+            "iOS Development": 4,
+            "UI/UX Design": 4,
+            "Java": 2,
+            "Rust": 4,
+            "JavaScript": 5
+        },
+        "interest_in_challenges": [
+            "AED Challenge",
+            "Mango Challenge",
+            "Restb.ai Challenge"
+        ]
+    },
+    {
+        "id": "14cf6a5f-7e48-49c8-9e59-522fe1178ad8",
+        "name": "Alessandra P\u00e9rez Oliveira",
+        "email": "alessandra_prez_oliveira@gmail.com",
+        "age": 20,
+        "year_of_study": "2nd year",
+        "shirt_size": "M",
+        "university": "Universitat Polit\u00e8cnica de Catalunya (UPC)",
+        "dietary_restrictions": "None",
+        "interests": [
+            "Machine Learning/AI",
+            "E-commerce/Retail",
+            "Productivity",
+            "Social Good"
+        ],
+        "preferred_role": "Design",
+        "experience_level": "Intermediate",
+        "hackathons_done": 5,
+        "objective": "Hey! My objective for this datathon is to make the most of the experience and have an absolute blast. I'm all about learning new things and networking, but I'm more interested in the social aspect and having fun with my fellow participants. I'm hoping to take advantage of all the events, workshops, and activities the datathon has to offer, and meet some amazing people who share similar interests. I'm looking forward to sharing laughter, creating memories, and making new friends!",
+        "introduction": "Hey there! I'm Alessandra, a 20-year-old student living life to the fullest. I'm in my second year, and I'm all about embracing new experiences. I'm passionate about using tech to drive social impact and make a positive difference in people's lives. I'm excited to join this datathon and connect with like-minded individuals who share my enthusiasm for innovation and collaboration. I'm looking forward to making memories, sharing laughs, and learning from each other as we solve real-world problems and have a blast doing it!",
+        "technical_project": "I had a blast working on a non-technical project with friends, building a community center in our local neighborhood! We designed the space to promote artistic expression and self-expression. I loved seeing people come together to share their talents and create a safe space for underprivileged youth. We held workshops, art exhibitions, and even a mini-concert. As a programmer, it was a change of pace to focus on problem-solving in a more creative, less technical way. But still, I used my organizational skills learned through agile methodology to plan and coordinate the whole project. It was an incredible experience!",
+        "future_excitement": "As I look to the future, I'm thrilled to share that I'm excited about the prospect of developing an AI-powered platform that revolutionizes the way we shop sustainably. With a passion for e-commerce and social good, I envision creating a system that helps consumers make informed, eco-friendly purchasing decisions. The platform would leverage machine learning algorithms to analyze consumer habits, supply chain transparency, and product lifecycle to provide personalized recommendations, promoting a more responsible and waste-reducing consumption. This endeavor not only aligns with my values but also offers the potential to create positive environmental change.",
+        "fun_fact": "When I'm not coding, I'm usually binge-listening to true crime podcasts or attempting to cook exotic international recipes in my tiny dorm kitchen. Did you know that I'm also secretly a closeted jazz singer and often belt out show tunes in the shower?",
+        "preferred_languages": [
+            "English",
+            "Catalan",
+            "Portuguese"
+        ],
+        "friend_registration": [],
+        "preferred_team_size": 4,
+        "availability": {
+            "Saturday morning": true,
+            "Saturday afternoon": true,
+            "Saturday night": true,
+            "Sunday morning": true,
+            "Sunday afternoon": true
+        },
+        "programming_skills": {
+            "Agile Methodology": 6,
+            "PostgreSQL": 6,
+            "iOS Development": 3,
+            "Flask": 6,
+            "HTML/CSS": 4,
+            "Flutter": 7
+        },
+        "interest_in_challenges": [
+            "Mango Challenge",
+            "Restb.ai Challenge",
+            "AED Challenge"
+        ]
+    },
+    {
+        "id": "359f324b-b3ec-4770-8a60-86493503fee4",
+        "name": "Alessia Winston",
+        "email": "alessia_winston@gmail.com",
+        "age": 20,
+        "year_of_study": "2nd year",
+        "shirt_size": "S",
+        "university": "Politecnico di Milano",
+        "dietary_restrictions": "None",
+        "interests": [
+            "E-commerce/Retail",
+            "Databases",
+            "IoT"
+        ],
+        "preferred_role": "Don't know",
+        "experience_level": "Intermediate",
+        "hackathons_done": 5,
+        "objective": "My objective for this datathon is to bring home the win! I'm a competitive person and I thrive under pressure, so I'm going all out to make this the best hackathon experience I've had yet. I'm looking forward to tackling complex challenges, working with a tight-knit team, and pushing myself to deliver a winning solution. I'm not just in it for the glory, though - I also want to prove to myself that I've got what it takes to be a top-notch developer. So, expect to see me intensely focused on problem-solving and code-crafting my way to victory!",
+        "introduction": "Hey there! I'm Alessia, a competitive and passionate 20-year-old student who loves a good challenge. I'm currently in my second year of study and looking to put my skills to the test. When it comes to tech, I'm all about solving problems and creating something from scratch. I thrive in high-pressure environments, which makes me a great fit for datathons like this one. I'm ready to dive in, learn from my team, and come out on top. Bring it on!",
+        "technical_project": "I've worked on a fun IoT project where I created a smart gardening system using Arduino and a PostgreSQL database to store sensor data. I built sensors to monitor soil moisture, temperature, and humidity levels, and connected them to the web through Python APIs. This allowed me to create a user-friendly dashboard to monitor and control the garden remotely. It was amazing to see my project come to life and be able to share it with friends and family. I loved the challenge of integrating hardware and software, and it's been a great precursor to diving into more advanced projects like blockchain-based smart contracts.",
+        "future_excitement": "As I dive deeper into the world of technology, I've come to realize that I'm passionate about harnessing the power of blockchain to revolutionize e-commerce and retail. I envision a future where consumers can trustably verify the origin and quality of products through blockchain-backed supply chain transparency. Imagine a seamless shopping experience where buyers can access detailed information about their purchases, from factory to doorstep. I'd love to collaborate with other data enthusiasts to create innovative solutions that transform the retail landscape and redefine the relationship between consumers and brands. It's an ambitious goal, but I'm all in!",
+        "fun_fact": "When I'm not coding, you can find me leading my university's drone racing team - it's a rush like no other! I'm obsessed with trying to hack together the perfect autopilot script to help us dominate the competition. It's weird, I know, but it's actually a great way to chill and keep my creative juices flowing!",
+        "preferred_languages": [
+            "English",
+            "Italian"
+        ],
+        "friend_registration": [],
+        "preferred_team_size": 4,
+        "availability": {
+            "Saturday morning": true,
+            "Saturday afternoon": true,
+            "Saturday night": true,
+            "Sunday morning": false,
+            "Sunday afternoon": true
+        },
+        "programming_skills": {
+            "PostgreSQL": 3,
+            "IoT": 6,
+            "Blockchain": 7,
+            "Python": 5
+        },
+        "interest_in_challenges": [
+            "Restb.ai Challenge",
+            "AED Challenge",
+            "Mango Challenge"
+        ]
+    },
+    {
+        "id": "7961223b-759b-43e9-b817-99f9d6878f46",
+        "name": "Antoine Lefebvre.",
+        "email": "antoine_lefebvre.@gmail.com",
+        "age": 19,
+        "year_of_study": "2nd year",
+        "shirt_size": "L",
+        "university": "\u00c9cole Polytechnique",
+        "dietary_restrictions": "None",
+        "interests": [
+            "Music/Art",
+            "AR/VR",
+            "Mobile",
+            "Quantum",
+            "IoT"
+        ],
+        "preferred_role": "Visualization",
+        "experience_level": "Intermediate",
+        "hackathons_done": 2,
+        "objective": "Hey, it's me, Antoine! My objective for this datathon is to make some amazing friends, have a blast, and soak up as many experiences as I can. I'm all about vibing with fellow participants, sharing stories, and picking each other's brains. I'm hoping to attend panels, join workshops, and jam out with the dev community. Bring on the swag, the laughter, and the memories! My goal is to leave with new connections, a spring in my step, and a sense of adventure. I'm in it for the ride, and I'm stoked to share it with everyone!",
+        "introduction": "Hey, I'm Antoine! I'm a 19-year-old student with a passion for creativity and innovation. I'm a bit of a curious cat, always exploring new worlds, whether that's through music, art, or the latest tech trends. I'm all about vibing with others, learning from their experiences, and sharing my own. At the datathon, I'm looking to level up my network, spark new ideas, and leave with a spring in my step. Let's jam out, trade stories, and make some unforgettable memories!",
+        "technical_project": "Man! I'd say my favorite project was when I created a virtual art gallery using React Native and Docker. I love art, and I wanted to merge my passion with tech. I built an app that allowed users to explore an immersive gallery featuring interactive pieces, and the backend was powered by a Docker container. It was amazing to see people's reactions when they walked in - they were completely absorbed in the virtual world! It was a blast working on something so creative, and I learned so much about AR/VR and mobile development.",
+        "future_excitement": "You know, as a computer science enthusiast, I'm always thinking about the future of technology and its potential to revolutionize various aspects of our lives. In the next 10 years, I'm excited to see the advancements in AR and VR technologies that will change the way we interact with information and each other. Imagine being able to seamlessly switch between physical and virtual environments, or have AI-powered avatars that can empathize with us on an emotional level. It's mind-boggling to think about the possibilities, and I can't wait to be a part of shaping this technological frontier!",
+        "fun_fact": "When I'm not coding, you can find me riffing on the guitar or sketching surreal landscapes. Little-known fact: I'm a closeted musician and wrote a song in Python (okay, it's just a funky tempo- adjusted MIDI file, but still). Who knows, maybe I'll compose a datathon anthem!",
+        "preferred_languages": [
+            "French"
+        ],
+        "friend_registration": [],
+        "preferred_team_size": 4,
+        "availability": {
+            "Saturday morning": true,
+            "Saturday afternoon": true,
+            "Saturday night": true,
+            "Sunday morning": true,
+            "Sunday afternoon": true
+        },
+        "programming_skills": {
+            "Docker": 3,
+            "Data Visualization": 4,
+            "SQL": 6,
+            "Python": 6,
+            "Natural Language Processing": 2,
+            "JavaScript": 7,
+            "React Native": 4,
+            "C++": 2
+        },
+        "interest_in_challenges": [
+            "Restb.ai Challenge",
+            "Mango Challenge",
+            "AED Challenge"
+        ]
+    },
+    {
+        "id": "9fe09efc-d630-48c7-9a4d-f0cf09670a13",
+        "name": "Ava Wynter",
+        "email": "ava_wynter@outlook.com",
+        "age": 19,
+        "year_of_study": "1st year",
+        "shirt_size": "M",
+        "university": "Universitat Aut\u00f2noma de Barcelona (UAB)",
+        "dietary_restrictions": "None",
+        "interests": [
+            "AR/VR",
+            "E-commerce/Retail",
+            "Voice skills",
+            "Health",
+            "Blockchain",
+            "Music/Art"
+        ],
+        "preferred_role": "Development",
+        "experience_level": "Beginner",
+        "hackathons_done": 0,
+        "objective": "I'm stoked to be at this datathon! My goal is to come away with some awesome new skills and knowledge to take back to my university degree. I've just started learning to code, and I'd love to gain more confidence and experience with real-world projects. I'm all about absorbing as much as I can from the workshops and mentorship sessions, and I'm excited to collaborate with other participants to build something innovative. My primary focus is on leveling up my skills, and I'm excited to see where this journey takes me!",
+        "introduction": "Hey there! I'm Ava Wynter, and I'm thrilled to be here at the datathon! As a fresh-faced student, I'm just starting to dip my toes into the world of programming. Despite being a newbie, I'm super excited to learn as much as I can and take it to the next level. I'm really drawn to the tech side of things, especially stuff like AR/VR and Voice skills - it's like the ultimate intersection of art and tech! With this event, I'm hoping to level up my skills, absorb as much as possible, and collaborate with awesome people like you!",
+        "technical_project": "I once built a personal project where I created a VR experience using Unity and Rust to explore a 3D-generated cave system. I was thrilled to see my cave come to life with textures, lighting, and sound effects! I spent hours experimenting with different algorithms to generate the cave structure and create a sense of exploration. Non-technical friends were amazed by the experience, and I realized the magic of combining art and coding. Although it's not production-ready, the project instilled confidence in my problem-solving abilities and fueled my passion for combining tech and creativity.",
+        "future_excitement": "I'm thrilled to share that I'm passionate about creating immersive healthcare experiences using AR/VR technology! As a tech-savvy individual, I envision a future where patients can receive more personalized and engaging treatments, allowing for better diagnoses and outcomes. Imagine patients virtually walking through a digital replica of their body to identify issues or undergoing immersive therapy sessions that make them feel more in control. My ultimate goal is to develop a platform that empowers healthcare professionals to create custom AR/VR experiences, making a tangible impact on patient care and improving overall health outcomes.",
+        "fun_fact": "Hey there! Did you know that I'm a secret harmonica virtuoso? On lazy Sunday afternoons, you can find me playing bluesy riffs on my porch, attempting to harmonize with my cat, Mr. Whiskers. Okay, okay, he thinks I'm crazy, but hey, it's fun, right?",
+        "preferred_languages": [
+            "English"
+        ],
+        "friend_registration": [],
+        "preferred_team_size": 4,
+        "availability": {
+            "Saturday morning": true,
+            "Saturday afternoon": true,
+            "Saturday night": true,
+            "Sunday morning": true,
+            "Sunday afternoon": true
+        },
+        "programming_skills": {
+            "Rust": 1,
+            "Go": 4
+        },
+        "interest_in_challenges": [
+            "AED Challenge",
+            "Restb.ai Challenge",
+            "Mango Challenge"
+        ]
+    },
+    {
+        "id": "b5af3cda-f580-4f90-a73a-4f13801dcc57",
+        "name": "Sofia Rose Navarro",
+        "email": "sofia_rose_navarro@gmail.com",
+        "age": 19,
+        "year_of_study": "2nd year",
+        "shirt_size": "M",
+        "university": "Universidad de Granada",
+        "dietary_restrictions": "None",
+        "interests": [
+            "Education",
+            "Health",
+            "Quantum",
+            "IoT"
+        ],
+        "preferred_role": "Design",
+        "experience_level": "Intermediate",
+        "hackathons_done": 2,
+        "objective": "My objective for this datathon is all about the vibes! I'm not here to stress about winning, and I'm not trying to level up my coding skills (at least, not too much, haha!). I'm looking forward to making new friends, having a blast, and participating in as many events as I can. I want to soak up the datathon atmosphere, try new things, and walk away with some amazing memories. I'm all about having fun and learning from the experience, so bring on the datathon shenanigans!",
+        "introduction": "Hey there! I'm Sofia Rose, a 19-year-old student taking a break from my studies to get weird and wonderful with datathon vibes! I'm not one for all-out competition, but I adore learning and making new friends. I'm all about soaking up the atmosphere, trying new things, and collecting memories. Think of me as the let's get cozy and hack together type!",
+        "technical_project": "I'm super fond of the IoT-based project I worked on with a friend last semester. We created a low-cost home automation system using Raspberry Pi, Arduino, and PostgreSQL! We designed a smartphone app that allowed users to control and monitor their smart home devices, and we even incorporated Computer Vision to recognize and respond to voice commands! It was an incredible learning experience, and seeing our project come to life was a major mood-booster. I loved combining my tech skills with my love for innovation and problem-solving. It was an incredible collaboration and a fantastic way to improve my programming skills while making something genuinely cool!",
+        "future_excitement": "I'm super excited about the prospect of working on projects that combine my passions for Education, Health, and Quantum! In the next 10 years, I'd love to be involved in developing AI-powered adaptive learning systems that utilize quantum computing to optimize educational outcomes for marginalized communities. Imagine having machines learning and adjusting to each student's unique needs in real-time, making education more accessible and inclusive. The thought of being part of this revolution gets me pumped up and inspired!",
+        "fun_fact": "When I'm not coding, you can catch me leading Zumba sessions at my university's fitness club! I love moving my body and singing along to salsa tunes - who knew computer science skills could be as groovy as they are geeky? Bring on the beats and blockchain magic",
+        "preferred_languages": [
+            "English",
+            "Spanish"
+        ],
+        "friend_registration": [],
+        "preferred_team_size": 4,
+        "availability": {
+            "Saturday morning": true,
+            "Saturday afternoon": true,
+            "Saturday night": true,
+            "Sunday morning": true,
+            "Sunday afternoon": true
+        },
+        "programming_skills": {
+            "Blockchain": 4,
+            "PostgreSQL": 2,
+            "Computer Vision": 5,
+            "Python": 3,
+            "TypeScript": 6
+        },
+        "interest_in_challenges": [
+            "Mango Challenge",
+            "AED Challenge",
+            "Restb.ai Challenge"
+        ]
+    },
+    {
+        "id": "fc5ab53d-376c-495d-8c48-3baf8ecfc6ed",
+        "name": "Ava Flynn",
+        "email": "ava_flynn@gmail.com",
+        "age": 17,
+        "year_of_study": "1st year",
+        "shirt_size": "M",
+        "university": "Universitat de Lleida (UDL)",
+        "dietary_restrictions": "None",
+        "interests": [
+            "E-commerce/Retail",
+            "Lifehacks",
+            "Quantum"
+        ],
+        "preferred_role": "Don't know",
+        "experience_level": "Beginner",
+        "hackathons_done": 1,
+        "objective": "Hey! As a beginner coder, I'm super excited to be participating in this datathon. My objective is to soak up as much knowledge as I can and push my programming skills to the next level. I'm hoping to get exposed to new technologies, techniques, and ideas that will help me become a better programmer. I'm not too concerned about winning (although it's nice too); what matters most to me is having the opportunity to learn and grow with the support of the community and my fellow participants. I'm ready to get coding and take in as much as I can!",
+        "introduction": "Hey there! I'm Ava Flynn, a first-year student with a passion for problem-solving and a thirst for knowledge. I've been fascinated by how technology can revolutionize the way we live and work, and I'm excited to be a part of this datathon. As a beginner programmer, I'm looking forward to stretching my coding muscles and gaining valuable experience. Outside of coding, I'm always on the lookout for lifehacks and new ideas that can make my life easier. Can't wait to meet you all and start building together!",
+        "technical_project": "I once worked on a project to build an e-commerce website for my local favorite boutique. It was an HTML/CSS project, where I used Bootstrap to create a responsive design. I enjoyed working on it because I got to incorporate my retail interest into coding. I created a simple product catalog, shopping cart, and checkout system. It was a great learning experience, and I loved seeing my work come to life. I even got to test-drive it and make some real sales! It was an awesome feeling to know that something I made was helping a small business.",
+        "future_excitement": "I'm genuinely thrilled at the prospect of contributing to the development of quantum-powered e-commerce platforms. Imagine being able to optimize inventory management, shipping, and logistics with quantum computer simulations, leading to faster, more efficient, and more accurate supply chain management. This could revolutionize the retail industry, enabling businesses to make data-driven decisions in real-time. As a beginner coder, I'm aware that this is an ambitious goal, but I believe the potential benefits outweigh the challenges. Who knows, maybe in 10 years, I'll be part of the team crafting the next wave of innovation in quantum retail!",
+        "fun_fact": "Here's a fun fact: I'm secretly a quantum chaos theorist in disguise! When I'm not coding, I love exploring the weird and wacky side of physics, and I'm always convinced that there's a hidden pattern to the universe. Give me a quantum puzzle any day, and I'm a happy camper!",
+        "preferred_languages": [
+            "English"
+        ],
+        "friend_registration": [],
+        "preferred_team_size": 4,
+        "availability": {
+            "Saturday morning": true,
+            "Saturday afternoon": true,
+            "Saturday night": true,
+            "Sunday morning": true,
+            "Sunday afternoon": true
+        },
+        "programming_skills": {
+            "HTML/CSS": 4,
+            "SQL": 1
+        },
+        "interest_in_challenges": [
+            "Restb.ai Challenge",
+            "Mango Challenge",
+            "AED Challenge"
+        ]
+    },
+    {
+        "id": "f257011d-9eab-4622-adda-02392f0fa8ca",
+        "name": "Mariona Wells",
+        "email": "mariona_wells@gmail.com",
+        "age": 20,
+        "year_of_study": "3rd year",
+        "shirt_size": "M",
+        "university": "Universitat Polit\u00e8cnica de Catalunya (UPC)",
+        "dietary_restrictions": "None",
+        "interests": [
+            "Lifehacks",
+            "Design",
+            "Web",
+            "Gaming"
+        ],
+        "preferred_role": "Don't know",
+        "experience_level": "Intermediate",
+        "hackathons_done": 5,
+        "objective": "I'm Mariona, and I'm super excited to participate in this datathon! My objective is to dive headfirst into this challenge and level up my skills. I've been doing hackathons for a few years now, and I'm looking forward to putting my knowledge to the test. I want to learn new things, experiment with different tools, and refine my programming skills. I'm open to trying new approaches and approaches, and I'm hoping to come out of this with some sweet new techniques and a bunch of fun projects to add to my portfolio. Bring it on!",
+        "introduction": "Hey there! I'm Mariona, a 20-year-old student with a passion for problem-solving. When I'm not hitting the books, you can find me coding away or exploring new tech trends. I've participated in a few hackathons, and I'm always up for a challenge. My goal is to learn as much as I can, try new things, and maybe even discover some new favorite tools. I'm excited to see what this datathon has in store and can't wait to meet the other participants. Let's make some magic happen!",
+        "technical_project": "I had a blast working on a pet project called EcoLife. I used React to build a simple web app that helped me track my daily habits and routines related to sustainability. It was my first time using a UI framework, and I loved designing and customizing the layout. I used a SQL database to store user data and AWS for backend storage. It was amazing to see my ideas come to life and understand how tech can impact my daily life. Now, I use EcoLife to stay motivated to reduce my waste, recycle, and even monitor my water usage!",
+        "future_excitement": "I'm thrilled to think about what the future holds! In the next 10 years, I'm eager to dive into Artificial Intelligence and Machine Learning, specifically in the realm of Healthcare Technology. I envision creating a platform that utilizes AI-powered predictive models to identify early warning signs of chronic diseases, empowering individuals to take proactive control of their health. This project would bring together my passion for programming, lifehacks, and gaming to create a tool that can positively impact people's lives. Who knows, maybe it'll even become a revolutionary new standard in healthcare!",
+        "fun_fact": "Hey there! Fun fact about me - I'm secretly a 'tech-tinkerer extraordinaire'! When I'm not studying or hacking, I love retro-fitting my own gadgets and DIY-ing innovative solutions to everyday problems. Who knew that's just a side of me, hmm?",
+        "preferred_languages": [
+            "English",
+            "Catalan"
+        ],
+        "friend_registration": [],
+        "preferred_team_size": 4,
+        "availability": {
+            "Saturday morning": true,
+            "Saturday afternoon": true,
+            "Saturday night": false,
+            "Sunday morning": true,
+            "Sunday afternoon": true
+        },
+        "programming_skills": {
+            "AWS/Azure/GCP": 3,
+            "React": 3,
+            "SQL": 2,
+            "Python": 6
+        },
+        "interest_in_challenges": [
+            "Restb.ai Challenge",
+            "AED Challenge",
+            "Mango Challenge"
+        ]
+    },
+    {
+        "id": "57fffc51-bcc8-4c36-afbe-795295e4a009",
+        "name": "Alejandro Vicens Rodr\u00edguez",
+        "email": "alejandro_vicens_rodrguez@gmail.com",
+        "age": 20,
+        "year_of_study": "3rd year",
+        "shirt_size": "XL",
+        "university": "Universitat Ramon Llull (URL)",
+        "dietary_restrictions": "None",
+        "interests": [
+            "Health",
+            "DevOps",
+            "Mobile",
+            "Machine Learning/AI",
+            "Education",
+            "E-commerce/Retail"
+        ],
+        "preferred_role": "Design",
+        "experience_level": "Intermediate",
+        "hackathons_done": 1,
+        "objective": "My objective for this datathon is clear: I'm here to win. As a second-timer, I've learned the importance of getting to work quickly and efficiently, and I'm confident that my Intermediate-level programming skills will give me an edge. I'm not looking to make friends or party - although I'm sure that will be a bonus! - but instead, I'm laser-focused on crushing the competition. Bring on the challenges and hackathons, I'm ready to put my skills to the test and take home the top prize.",
+        "introduction": "Hey, I'm Alejandro Vicens Rodr\u00edguez, and I'm all about delivering results. I've been programming since I was a teen and have since honed my skills in Git, Natural Language Processing, and Data Analysis. With a passion for creating innovative solutions, I'm always on the lookout for new challenges. As a 20-year-old student, I'm confident in my ability to approach problems from different angles. With a healthy dose of competitiveness, I'm here to win this datathon and prove myself as a force to be reckoned with. Let's get down to business!",
+        "technical_project": "Man! I loved working on a project where I created a chatbot using Rust and Python that helped patients manage their medical appointments. I combined my knowledge of natural language processing and iOS development to design an intuitive mobile app that would simplify the scheduling process. Seeing patients' reactions when they used the app for the first time was a huge motivation boost! I learned so much from that project, from setting up the Rust framework to crafting engaging user interactions. It was an amazing feeling knowing that my code could make a real difference in people's lives.",
+        "future_excitement": "I'm really enthusiastic about the potential of artificial intelligence and machine learning to revolutionize the healthcare industry. In the next 10 years, I'm eager to contribute to the development of AI-powered medical diagnostic tools that can help doctors detect diseases more accurately and efficiently. I believe that this technology has the potential to save countless lives and improve the quality of care for patients worldwide.",
+        "fun_fact": "Hey, I'm Alejandro! When I'm not coding, I love to geek out over health-focused AI and developing apps to track patients' vital signs. Did you know I once built an AR-powered medication reminder app for my grandpa, who's a stroke survivor? It saved him a lot of headaches - and doctor's visits!",
+        "preferred_languages": [
+            "English",
+            "Catalan",
+            "Spanish"
+        ],
+        "friend_registration": [],
+        "preferred_team_size": 4,
+        "availability": {
+            "Saturday morning": true,
+            "Saturday afternoon": true,
+            "Saturday night": true,
+            "Sunday morning": true,
+            "Sunday afternoon": true
+        },
+        "programming_skills": {
+            "Git": 3,
+            "Rust": 4,
+            "Figma": 2,
+            "Natural Language Processing": 2,
+            "Python": 2,
+            "Data Analysis": 4,
+            "iOS Development": 4
+        },
+        "interest_in_challenges": [
+            "AED Challenge",
+            "Restb.ai Challenge",
+            "Mango Challenge"
+        ]
+    },
+    {
+        "id": "22df404a-20e7-40e9-a9ad-59a743dff09f",
+        "name": "Sof\u00eda Elena Russell.",
+        "email": "sofa_elena_russell.@gmail.com",
+        "age": 18,
+        "year_of_study": "2nd year",
+        "shirt_size": "L",
+        "university": "Universidad de Valencia",
+        "dietary_restrictions": "None",
+        "interests": [
+            "IoT",
+            "Mobile",
+            "Social Good",
+            "Fintech",
+            "Gaming",
+            "DevOps",
+            "Productivity",
+            "Web",
+            "AR/VR"
+        ],
+        "preferred_role": "Design",
+        "experience_level": "Beginner",
+        "hackathons_done": 0,
+        "objective": "My goal for this datathon is to come out on top! I'm hungry to compete against other talented individuals and prove to myself that I've got what it takes to win. I'm always up for a good challenge and can't wait to dive into the task at hand. I'm planning to put in the extra hours, perfect my code, and give it my all to emerge victorious. Bring on the competition!",
+        "introduction": "Hi, I'm Sof\u00eda! I'm a second-year student with a passion for creating innovative solutions. I'm all about taking on challenges and pushing my limits. This datathon is my chance to test my skills, learn from others, and see where my curiosity takes me. I'm excited to dive into the task at hand and give it my all. I'm a problem-solver at heart, always on the lookout for new ways to make a difference. When I'm not hitting the books, you can find me coding or gaming. Bring on the competition - let's see what I'm made of!",
+        "technical_project": "One project I really enjoyed was building a simple home automation system using Raspberry Pi and the Internet of Things (IoT). I've always been fascinated by smart homes, so I decided to give it a try. I set up sensors to track temperature and humidity, and then used Rust programming to create a dashboard that allowed me to monitor and control the devices remotely. It was a great learning experience, and I loved seeing my ideas come to life. It was also super satisfying to have my smart home lights turning on and off just with my voice command!",
+        "future_excitement": "I'm thrilled to think about what the future holds, and in the next 10 years, I'm eager to dive into the development of wearable devices that focus on improving mental health. With advancements in IoT and augmented reality, I envision wearables that can detect early signs of anxiety and depression, providing personalized coping mechanisms and mental wellness resources. It's a realm that combines my passion for IoT, Rust programming, and making a positive impact - a truly interdisciplinary pursuit that has the potential to revolutionize the way we address mental health. The prospect of creating innovative solutions that could enhance people's lives is what gets me excited!",
+        "fun_fact": "Hey, did you know that I built my own gaming keyboard from scratch in my mom's garage when I was 16? It was a beast of a project, but I learned so much from it - even rewrote some parts in Rust! Gaming and coding go hand-in-hand, and I love the thrill of hacking together solutions",
+        "preferred_languages": [
+            "English",
+            "Spanish"
+        ],
+        "friend_registration": [
+            "b6922470-df9d-4b64-84e6-6852f681f69c",
+            "325e158b-bd36-48f6-9aea-cf55426808fb"
+        ],
+        "preferred_team_size": 3,
+        "availability": {
+            "Saturday morning": true,
+            "Saturday afternoon": true,
+            "Saturday night": true,
+            "Sunday morning": true,
+            "Sunday afternoon": true
+        },
+        "programming_skills": {
+            "IoT": 1,
+            "Rust": 4,
+            "TypeScript": 4
+        },
+        "interest_in_challenges": [
+            "AED Challenge",
+            "Restb.ai Challenge",
+            "Mango Challenge"
+        ]
+    },
+    {
+        "id": "50ac00ab-42d5-40ae-a7da-ad69a687b7cb",
+        "name": "Emily Ann Welles",
+        "email": "emily_ann_welles@gmail.com",
+        "age": 20,
+        "year_of_study": "3rd year",
+        "shirt_size": "S",
+        "university": "Universitat Ramon Llull (URL)",
+        "dietary_restrictions": "None",
+        "interests": [
+            "Music/Art",
+            "Blockchain",
+            "Design",
+            "Voice skills",
+            "Machine Learning/AI",
+            "Productivity"
+        ],
+        "preferred_role": "Analysis",
+        "experience_level": "Advanced",
+        "hackathons_done": 5,
+        "objective": "Hey! So, my objective for this datathon is pretty straightforward: I want to improve my skills and learn new things. With 5 hackathons under my belt, I'm looking to take my programming skills to the next level and experiment with new technologies. I'm hoping to push myself out of my comfort zone and learn from others in the community. Specifically, I'm interested in exploring areas like machine learning and data visualization, so I'd love to attend talks and workshops related to those topics. Let's see how far we can take our skills this weekend!",
+        "introduction": "Hey there! I'm Emily, a 20-year-old student with a passion for programming and a thirst for adventure. With three years of experience under my belt, I've gained a solid foundation in software development. I've always been fascinated by the world of tech and its endless possibilities. For this datathon, I'm eager to challenge myself and take my skills to new heights. I'm interested in machine learning and data visualization, and I'm looking forward to learning from others and sharing my own insights. Let's see where the weekend takes us!",
+        "technical_project": "One project that really stands out to me is a music recommendation system I built using machine learning and Python. I've always loved music and was fascinated by the idea of creating a system that could recommend songs based on a user's preferences. I gathered a dataset of songs and their features, trained a model using scikit-learn, and deployed it on a simple web app. It was amazing to see how accurately it could predict user preferences and introduce them to new artists and songs! Working on this project really honed my skills in machine learning and problem-solving, and I had a blast doing it.",
+        "future_excitement": "I'm absolutely thrilled to think about the impact I'd love to make in the next decade. One thing I'm really passionate about is developing a more intuitive and accessible AI-powered music composition tool. Imagine being able to create complex melodies and harmonies with the simplicity of a smartphone app! As someone who's a musician at heart, I envision an AI co-creation partner that understands artistic vision and complements human creativity. I'd love to join forces with a talented team to bring this concept to life, and I believe the datathon will give me the necessary skills and network to take the first steps towards making this dream a reality.",
+        "fun_fact": "When I'm not coding, you can find me belting out my favorite indie tunes at the top of my lungs - yes, I'm a secret rockstar! I've even got a playlist titled 'Algorithmic Anthems' to keep me pumped up during long hackathons.",
+        "preferred_languages": [
+            "English"
+        ],
+        "friend_registration": [],
+        "preferred_team_size": 4,
+        "availability": {
+            "Saturday morning": true,
+            "Saturday afternoon": true,
+            "Saturday night": true,
+            "Sunday morning": true,
+            "Sunday afternoon": true
+        },
+        "programming_skills": {
+            "Android Development": 4,
+            "JavaScript": 7,
+            "TypeScript": 7,
+            "Blockchain": 9,
+            "C++": 6,
+            "MongoDB": 5,
+            "Python": 4,
+            "AWS/Azure/GCP": 9,
+            "React": 9,
+            "HTML/CSS": 5,
+            "Git": 9
+        },
+        "interest_in_challenges": [
+            "AED Challenge",
+            "Mango Challenge",
+            "Restb.ai Challenge"
+        ]
+    },
+    {
+        "id": "c987a232-e738-47c0-8e54-f6bfd9f2a16b",
+        "name": "Sofia Miralbell",
+        "email": "sofia_miralbell@gmail.com",
+        "age": 19,
+        "year_of_study": "2nd year",
+        "shirt_size": "M",
+        "university": "Universitat de Barcelona (UB)",
+        "dietary_restrictions": "Vegetarian",
+        "interests": [
+            "Fintech",
+            "Quantum",
+            "Lifehacks",
+            "Blockchain",
+            "Social Good",
+            "Databases",
+            "Enterprise",
+            "Productivity"
+        ],
+        "preferred_role": "Development",
+        "experience_level": "Intermediate",
+        "hackathons_done": 4,
+        "objective": "Hi! As Sofia Miralbell, my objective for this datathon is to give it my all and bring home the win. I've participated in a few hackathons before, and I'm eager to take my skills to the next level. I'm looking to work tirelessly to create an innovative solution that wows the judges. I've been preparing my code and researching relevant topics in-depth. My goal is to emerge victorious and feel the sense of accomplishment that comes with winning a datathon. Bring on the challenge!",
+        "introduction": "Hey there! I'm Sofia Miralbell, a second-year student looking to make a splash in the world of Fintech. I've got a passion for finding innovative solutions that can change the game, and I'm always on the lookout for ways to level up my skills. I've dabbled in a bit of everything from computer vision to data analysis, and I'm confident in my ability to think outside the box. I'm a perfectionist at heart, so I'll stop at nothing to bring my ideas to life. Can't wait to join the challenge and show you what I'm made of!",
+        "technical_project": "I recently worked on a personal project to build a chatbot using Python and Natural Language Processing (NLP) techniques. I was excited to apply my programming skills to create a conversational AI that could help people with language-based tasks. I designed the chatbot to assist users with booking flights, hotels, and restaurants, using a combination of machine learning algorithms and pre-existing APIs. It was a fantastic learning experience, and I loved seeing my project come to life. It's projects like these that remind me why I love coding - it's amazing to see the possibilities when creativity meets tech!",
+        "future_excitement": "I'm thrilled to dive into the realm of Quantum Computing! With the rapid progress in this field, I'm excited to explore how it can revolutionize multiple domains, particularly in Fintech. Imagine a future where sensitive financial transactions are secured by unhackable quantum cryptography, or quantum-inspired algorithms optimize trading strategies. As a long-term goal, I'd love to contribute to the development of practical, user-friendly Quantum computing frameworks that democratize access to this powerful technology, empowering industries and individuals to achieve unparalleled levels of efficiency and innovation. The potential is awe-inspiring, and I'm eager to be a part of it!",
+        "fun_fact": "Hey! When I'm not coding, I'm a rockstar at heart! I've played the electric guitar since I was 12 and can bust out a mean Jimi Hendrix solo. In fact, I've even written a few songs about code and data analytics - who knows, maybe I'll release an album someday!",
+        "preferred_languages": [
+            "English",
+            "Catalan"
+        ],
+        "friend_registration": [],
+        "preferred_team_size": 4,
+        "availability": {
+            "Saturday morning": true,
+            "Saturday afternoon": true,
+            "Saturday night": true,
+            "Sunday morning": true,
+            "Sunday afternoon": true
+        },
+        "programming_skills": {
+            "Computer Vision": 6,
+            "Rust": 5,
+            "Data Analysis": 2,
+            "MongoDB": 6,
+            "Go": 3,
+            "Python": 6,
+            "Agile Methodology": 5
+        },
+        "interest_in_challenges": [
+            "AED Challenge",
+            "Restb.ai Challenge",
+            "Mango Challenge"
+        ]
+    },
+    {
+        "id": "d968f665-4353-487e-9c71-520a23c808a0",
+        "name": "Aur\u00e9lia Windsor",
+        "email": "aurlia_windsor@gmail.com",
+        "age": 20,
+        "year_of_study": "3rd year",
+        "shirt_size": "L",
+        "university": "CentraleSup\u00e9lec",
+        "dietary_restrictions": "None",
+        "interests": [
+            "Social Good",
+            "IoT",
+            "Machine Learning/AI",
+            "AR/VR",
+            "Communication",
+            "Voice skills",
+            "Health"
+        ],
+        "preferred_role": "Development",
+        "experience_level": "Intermediate",
+        "hackathons_done": 2,
+        "objective": "Hey there! I'm Aur\u00e9lia, and I'm stoked to be joining the datathon! My goal is to dive deep into the world of data and sharpen my skills. I've had some exposure to programming through my degree, but I know there's still so much to learn. I'm looking forward to immersing myself in the process, getting hands-on with new tools and tech, and leveling up my data game. I'm not too focused on winning - I just want to take away concrete learnings and new experiences that'll help me grow as a developer. Bring it on!",
+        "introduction": "Hi! I'm Aur\u00e9lia, a 20-year-old student with a passion for using technology to make a positive impact. In my free time, I enjoy tinkering with IoT projects and exploring the potential of AI and machine learning. I'm stoked to be joining this datathon to take my programming skills to the next level and learn from fellow enthusiasts. With a solid foundation in Android development and agile methodology, I'm excited to dive deep into the world of data and create something meaningful. Let's make some magic happen together!",
+        "technical_project": "I loved working on a personal project where I created an app that helps seniors connect with family and friends using voice commands. I'm passionate about accessibility and using technology to bridge the gap. The app allows users to make voice calls, send voice messages, and even control their smart home devices with just their voice. I used Java and Agile methodology to develop the app, and it was amazing to see it come to life. The process was challenging, but knowing that I was making a positive impact motivated me to keep going. It was an incredible feeling to see my idea become a reality!",
+        "future_excitement": "I'm thrilled to share my ambition - I'm eager to explore the intersection of artificial intelligence, machine learning, and health technology to create AI-assisted diagnostics for chronic illnesses. With my passion for data analysis and my knowledge of programming languages like Java and Go, I envision developing a device that integrates AI-powered sensors with wearable technology to monitor vital signs and detect early warning signs of diseases. This innovation would revolutionize patient care, empowering individuals to take control of their health and improving quality of life worldwide. The prospect of tackling this challenge motivates me to continuously learn and improve.",
+        "fun_fact": "When I'm not glued to my laptop, I'm probably practicing my DJ skills or jamming out to electronic music. Fun fact: I'm a wannabe 'digital turntablist' - combining coding and music production to create unique, data-driven sounds and beats. Who knew 1s and 0s could be this funky?",
+        "preferred_languages": [
+            "English",
+            "French"
+        ],
+        "friend_registration": [],
+        "preferred_team_size": 4,
+        "availability": {
+            "Saturday morning": true,
+            "Saturday afternoon": true,
+            "Saturday night": true,
+            "Sunday morning": true,
+            "Sunday afternoon": true
+        },
+        "programming_skills": {
+            "Android Development": 4,
+            "Java": 2,
+            "Blockchain": 3,
+            "Go": 4,
+            "Agile Methodology": 4
+        },
+        "interest_in_challenges": [
+            "Mango Challenge",
+            "AED Challenge",
+            "Restb.ai Challenge"
+        ]
+    },
+    {
+        "id": "2811f7b6-1730-4db2-9561-f0beeeb18620",
+        "name": "Sofia Rodriguez",
+        "email": "sofia_rodriguez@gmail.com",
+        "age": 21,
+        "year_of_study": "4th year",
+        "shirt_size": "XL",
+        "university": "Universidad de Valencia",
+        "dietary_restrictions": "None",
+        "interests": [
+            "Mobile",
+            "Blockchain",
+            "Social Good"
+        ],
+        "preferred_role": "Development",
+        "experience_level": "Advanced",
+        "hackathons_done": 4,
+        "objective": "My objective for this datathon is to level up my skills and take my programming abilities to the next level. I'm not here to just show off, but to challenge myself and push my limits. I'm excited to dive into new technologies, tools, and techniques, and apply them to real-world problems. I'm looking forward to collaborating with other passionate developers and learning from each other. Ultimately, I want to walk away from this datathon with a newfound confidence and a toolbox full of fresh skills to take back to my studies and future projects.",
+        "introduction": "Hey there! I'm Sofia Rodriguez, a 21-year-old student with a passion for coding. I've been hooked on programming since high school, and I'm always looking for ways to level up my skills. I'm a firm believer that coding shouldn't be just about building apps, but about making a positive impact on the world. This datathon is an opportunity for me to challenge myself, collaborate with like-minded developers, and explore new technologies that can help me achieve my goal of creating meaningful solutions. I'm excited to be here and can't wait to see what we'll create together!",
+        "technical_project": "One project that really stood out to me was a volunteer app I built with a friend for a local food bank. We used React, GraphQL, and MongoDB to create an app that allowed users to track their food donations and volunteers to sign up for shifts. The best part was working with the food bank team to identify their needs and designing an intuitive UI. Seeing people use our app and make a difference in the community made it all worth it! It was a great opportunity to balance technical skills with social impact, and I felt like I was making a real difference.",
+        "future_excitement": "As I look to the next 10 years, I'm genuinely excited to contribute to the development of accessible, user-friendly, and empowering technologies that can benefit the underprivileged and marginalized communities. Specifically, I'm passionate about integrating Blockchain technology with IoT sensors to create decentralized and community-driven health monitoring systems for remote areas. Imagine being able to monitor vital signs, track health conditions, and access medical guidance remotely, without relying on traditional infrastructure or administrative bureaucracy. This fusion of technologies has the potential to revolutionize global healthcare, and I'd be thrilled to be a part of it.",
+        "fun_fact": "I'm a total music nerd! When I'm not coding, you can find me rocking out to my fave bands on guitar or belting out show tunes in the shower. Fun fact: I once taught myself how to play the ukulele to help me relax during a brutal study session for my CS exams - best life hack ever!",
+        "preferred_languages": [
+            "English",
+            "Spanish"
+        ],
+        "friend_registration": [],
+        "preferred_team_size": 4,
+        "availability": {
+            "Saturday morning": true,
+            "Saturday afternoon": true,
+            "Saturday night": true,
+            "Sunday morning": true,
+            "Sunday afternoon": true
+        },
+        "programming_skills": {
+            "iOS Development": 8,
+            "Flutter": 8,
+            "Git": 8,
+            "TypeScript": 6,
+            "Android Development": 7,
+            "TensorFlow": 8,
+            "React": 5,
+            "MongoDB": 5,
+            "Figma": 8,
+            "PostgreSQL": 9,
+            "JavaScript": 8,
+            "UI/UX Design": 5,
+            "IoT": 6
+        },
+        "interest_in_challenges": [
+            "AED Challenge",
+            "Mango Challenge",
+            "Restb.ai Challenge"
+        ]
+    },
+    {
+        "id": "f77aaea7-6e9e-4fac-b919-cdddd1c11c14",
+        "name": "Aur\u00e8lia Fleur Morelli",
+        "email": "aurlia_fleur_morelli@gmail.com",
+        "age": 21,
+        "year_of_study": "3rd year",
+        "shirt_size": "M",
+        "university": "Universitat de Lleida (UDL)",
+        "dietary_restrictions": "None",
+        "interests": [
+            "Machine Learning/AI",
+            "Web",
+            "Blockchain"
+        ],
+        "preferred_role": "Development",
+        "experience_level": "Advanced",
+        "hackathons_done": 7,
+        "objective": "Hey! So, I'm really excited to be here at the datathon! My goal is to take this opportunity to improve my programming skills and learn from others. I've already got a solid foundation in coding, but I know there's always more to learn and I'm eager to dive deeper into new tools and techniques. I'm looking forward to collaborating with others, asking questions, and getting feedback to help me grow as a developer. I'm all about self-improvement, so expect me to be fully engaged and soaking up all the knowledge I can get!",
+        "introduction": "Hey there! I'm Aur\u00e8lia, a 21-year-old student with a passion for coding and problem-solving. I've spent the past two years honing my skills in programming, with a focus on machine learning and web development. I'm all about learning and growing as a developer, and I'm excited to be here at the datathon to take my skills to the next level. When I'm not coding, you can find me geeking out over the latest AI breakthroughs or experimenting with new technologies. I'm looking forward to meeting like-minded people and sharing my enthusiasm for all things tech!",
+        "technical_project": "I had a blast working on a personal project - a voice assistant using natural language processing! I used Rust for the server-side and Flutter for the client-side. It was amazing to see my creation respond to simple voice commands, playing music or sending texts. The best part was learning about sentiment analysis and improving my models' accuracy. It's been a fantastic way to apply what I've learned in Machine Learning and AI. I loved the freedom to experiment and the sense of accomplishment when it finally worked!",
+        "future_excitement": "I'm genuinely thrilled to think about the kind of projects I can tackle in the next decade! In my mind's eye, I see a world where AI and blockchain converge to revolutionize the way we approach healthcare. Imagine a decentralized, open-source platform that leverages machine learning to analyze and aggregate patient data, enabling rapid diagnosis and personalized treatment options. As a developer, I'd love to be part of the team crafting this vision, working on the intersection of Rust, React Native, and SQL to build a comprehensive solution that transforms healthcare for the better. The thought of it sends shivers down my spine!",
+        "fun_fact": "Oh, you want a fun fact? Well, when I'm not geeking out over code, I'm an amateur ukulele enthusiast! I once even composed my own AI-generated melody (don't judge!). It's my go-to way to relax and recharge - there's something about strumming chords that just soothes my code cravings!",
+        "preferred_languages": [
+            "Catalan",
+            "French",
+            "Italian"
+        ],
+        "friend_registration": [],
+        "preferred_team_size": 4,
+        "availability": {
+            "Saturday morning": true,
+            "Saturday afternoon": true,
+            "Saturday night": true,
+            "Sunday morning": true,
+            "Sunday afternoon": true
+        },
+        "programming_skills": {
+            "iOS Development": 3,
+            "Docker": 3,
+            "Rust": 7,
+            "Flask": 3,
+            "JavaScript": 3,
+            "React Native": 3,
+            "Flutter": 7,
+            "TypeScript": 5,
+            "SQL": 5,
+            "Data Analysis": 9,
+            "C++": 9
+        },
+        "interest_in_challenges": [
+            "Restb.ai Challenge",
+            "Mango Challenge",
+            "AED Challenge"
+        ]
+    },
+    {
+        "id": "553ec5f7-34b6-4926-93de-c6f71f9b39b7",
+        "name": "Aurora Isabella",
+        "email": "aurora_isabella@gmail.com",
+        "age": 18,
+        "year_of_study": "2nd year",
+        "shirt_size": "M",
+        "university": "Universidad Complutense de Madrid",
+        "dietary_restrictions": "Vegan",
+        "interests": [
+            "Education",
+            "E-commerce/Retail",
+            "AR/VR",
+            "Blockchain",
+            "Web",
+            "Mobile",
+            "DevOps"
+        ],
+        "preferred_role": "Don't know",
+        "experience_level": "Intermediate",
+        "hackathons_done": 5,
+        "objective": "Hey there! So, my objective for this datathon is pretty straightforward: I want to improve my skills and take my programming skills to the next level. I've participated in a few hackathons already, and I've learned a ton, but I know there's still so much to learn. I'm excited to work with a new set of tools and teammates to challenge myself and expand my horizons. I'm all about continuous learning, and this datathon is the perfect opportunity for me to do just that.",
+        "introduction": "Hi everyone! I'm Aurora Isabella, a 2nd-year student excited to be part of this datathon. When I'm not hitting the books, you can find me geeking out over cutting-edge tech. I've dabbled in programming and have a thirst for knowledge that's only been quenched by participating in a few hackathons so far. I'm all about lifelong learning and love exploring the intersections of education, innovation, and entrepreneurship. I'm stoked to be here, ready to stretch my programming muscles, and collaborate with an amazing team to create something awesome!",
+        "technical_project": "One of my favorite projects was when I built a social learning platform for students called ConnectEd. I designed a web application using React Native and integrated a chatbot using TensorFlow to help students find study groups and connect with peers. I also used a MongoDB database to store user information and conversation history. It was a thrilling project as it combined my interests in education and web development. Seeing users engaged and forming friendships through the platform made it all worthwhile. It was an amazing feeling, and I'd love to continue working on it!",
+        "future_excitement": "I'm excited to work on revolutionizing education through AI-powered personalized learning experiences. With the vast amount of data available, I envision creating a platform that utilizes machine learning to adapt learning materials to each individual's needs, style, and pace. By leveraging AR and VR technologies, I want to make learning more engaging, interactive, and accessible to students worldwide. I envision a future where education is democratized, and every student has equal access to high-quality learning resources, regardless of their geographical location or socio-economic background. It's a lofty goal, but I'm passionate about making a positive impact on education.",
+        "fun_fact": "I'm a total nerd for 80s movies, especially the Back to the Future trilogy! In my free time, I love to plan hypothetical Time Traveler's Dishes - creative recipes inspired by the characters' adventures, like the McFly's favorite burgers or Doc Brown's futuristic appetizers.",
+        "preferred_languages": [
+            "English",
+            "Spanish"
+        ],
+        "friend_registration": [],
+        "preferred_team_size": 4,
+        "availability": {
+            "Saturday morning": true,
+            "Saturday afternoon": true,
+            "Saturday night": true,
+            "Sunday morning": true,
+            "Sunday afternoon": true
+        },
+        "programming_skills": {
+            "TensorFlow": 5,
+            "MongoDB": 2,
+            "iOS Development": 6,
+            "React Native": 3,
+            "IoT": 6,
+            "Machine Learning": 7,
+            "Blockchain": 4,
+            "Go": 4,
+            "Android Development": 4
+        },
+        "interest_in_challenges": [
+            "Restb.ai Challenge",
+            "Mango Challenge",
+            "AED Challenge"
+        ]
+    },
+    {
+        "id": "45652493-3559-4233-9b9c-23010dc7f814",
+        "name": "Anna Mar\u00eda Garcia",
+        "email": "anna_mara_garcia@gmail.com",
+        "age": 18,
+        "year_of_study": "2nd year",
+        "shirt_size": "M",
+        "university": "Universitat de Barcelona (UB)",
+        "dietary_restrictions": "None",
+        "interests": [
+            "Fintech",
+            "Databases",
+            "Cybersecurity",
+            "Lifehacks",
+            "Quantum",
+            "Design",
+            "DevOps",
+            "Voice skills"
+        ],
+        "preferred_role": "Visualization",
+        "experience_level": "Intermediate",
+        "hackathons_done": 1,
+        "objective": "I'm all about vibin' with fellow datathoners! For me, this datathon is about making new friends and having an absolute blast. I'm excited to participate in as many events as I can, like workshops, mini-competitions, and even social activities. I want to explore new skills and techniques, but mostly, I want to connect with like-minded people and share laughter and memories. Let's do this!",
+        "introduction": "Hey there! I'm Anna Mar\u00eda Garcia, an 18-year-old student who's all about exploring the exciting world of tech. I'm a bit of a curious nerd, and I love diving into Fintech and learning about all the ways technology can shape our daily lives. When I'm not glued to my screen, you can find me fangirling over amazing designs or getting excited about the latest quantum breakthroughs. I'm so stoked to be here at the datathon and can't wait to make some incredible memories with all the amazing people I'll meet along the way!",
+        "technical_project": "I loved working on a project where I built a voice-controlled to-do list app using Flutter and Google Assistant! I've always been fascinated by natural language processing, and this project let me explore it. I designed the UI using Figma and integrated it with the app. It was so cool to see my app come to life and hear myself talking to it every day!",
+        "future_excitement": "I'm excited to contribute to the development of secure, AI-powered financial platforms that can democratize access to financial services for the underprivileged. I've always been fascinated by Fintech's potential to reshape the global financial landscape. In the next 10 years, I envision myself leading a team that designs and deploys innovative solutions utilizing machine learning and blockchain technology to create more transparent and inclusive financial systems. It's a daunting task, but I believe the rewards will be immense, and I'm thrilled to be a part of the journey to create a more equitable future for everyone.",
+        "fun_fact": "I'm a part-time code wizard, full-time dreamer! When I'm not coding, you can find me juggling fire or practicing yoga poses on rooftops. Okay, maybe that's a lie, but I do have a collection of quirky hats and a cat named Nova who thinks I'm her personal code guru.",
+        "preferred_languages": [
+            "English",
+            "Catalan"
+        ],
+        "friend_registration": [],
+        "preferred_team_size": 4,
+        "availability": {
+            "Saturday morning": true,
+            "Saturday afternoon": true,
+            "Saturday night": true,
+            "Sunday morning": true,
+            "Sunday afternoon": true
+        },
+        "programming_skills": {
+            "iOS Development": 7,
+            "Figma": 6,
+            "PyTorch": 3,
+            "Android Development": 7,
+            "Flutter": 6,
+            "Natural Language Processing": 7,
+            "AWS/Azure/GCP": 4,
+            "IoT": 4
+        },
+        "interest_in_challenges": [
+            "AED Challenge",
+            "Mango Challenge",
+            "Restb.ai Challenge"
+        ]
+    },
+    {
+        "id": "662230f0-a069-402e-8270-5e7bce63718d",
+        "name": "Emma Winters",
+        "email": "emma_winters@gmail.com",
+        "age": 20,
+        "year_of_study": "3rd year",
+        "shirt_size": "L",
+        "university": "Universitat Internacional de Catalunya (UIC)",
+        "dietary_restrictions": "Vegan",
+        "interests": [
+            "Design",
+            "Social Good",
+            "Blockchain",
+            "Productivity"
+        ],
+        "preferred_role": "Development",
+        "experience_level": "Intermediate",
+        "hackathons_done": 5,
+        "objective": "I'm all about soaking up the atmosphere and making memories this datathon! For me, it's all about the connections I make and the fun I have. I'd love to collaborate with fellow datathoners on as many projects as I can, learn from their perspectives, and gain new experiences. I'm not about competing with others or stressing out over winning; I just want to be part of an awesome community, learn from the challenges, and enjoy the ride! Let's make some friends and create some unforgettable experiences!",
+        "introduction": "Hey there! I'm Emma Winters, a 20-year-old third-year student with a passion for using technology to make a positive impact. I'm all about collaboration and creativity, which is why I'm super stoked to be here for the datathon. I'm a firm believer that learning should be fun, and that's exactly what I'm hoping to do here. When I'm not hitting the books, you can find me experimenting with new design tools or digging into code. I'm all about soaking up the atmosphere, making friends, and maybe even creating something amazing along the way. Let's make some memories!",
+        "technical_project": "I just loved working on a project that combined my love for Design and Blockchain! It was a sustainable energy trading platform I built during a hackathon. I used Figma to design the UI, and then collaborated with some awesome teammates to develop it using Rust and React Native. We even did a market test and received really positive feedback. What I enjoyed the most was seeing how our idea could make a real impact on the environment and hearing from others who were passionate about the same cause. It was an incredible experience, and I learned so much!",
+        "future_excitement": "As I look ahead, I'm really passionate about developing innovative solutions that empower marginalized communities. In the next 10 years, I'm eager to work on building a blockchain-based platform that utilizes computer vision and AI to facilitate sustainable energy access in rural areas. By leveraging React Native and Figma, I envision creating a user-friendly interface that enables community members to monitor and control their energy consumption, earning them cryptocurrency-based rewards for eco-friendly habits. It's a daunting task, but I believe it's within my grasp, and I'm excited to collaborate with like-minded individuals who share my vision.",
+        "fun_fact": "Hey there! Fun fact: I'm a total thrill-seeker! When I'm not hacking away on code, you can find me rock climbing, practicing capoeira, or planning my next travel adventure to distant lands. I'm all about that adrenaline rush and living life on the edge",
+        "preferred_languages": [
+            "English"
+        ],
+        "friend_registration": [],
+        "preferred_team_size": 4,
+        "availability": {
+            "Saturday morning": true,
+            "Saturday afternoon": true,
+            "Saturday night": true,
+            "Sunday morning": true,
+            "Sunday afternoon": true
+        },
+        "programming_skills": {
+            "Agile Methodology": 4,
+            "Computer Vision": 6,
+            "Git": 4,
+            "SQL": 2,
+            "Rust": 7,
+            "Figma": 5,
+            "Java": 4,
+            "Data Analysis": 6,
+            "React Native": 2
+        },
+        "interest_in_challenges": [
+            "Mango Challenge",
+            "AED Challenge",
+            "Restb.ai Challenge"
+        ]
+    },
+    {
+        "id": "9e3dec53-3ad8-41b8-a045-6af0fe28b9f7",
+        "name": "Aur\u00e9lien Langdon",
+        "email": "aurlien_langdon@gmail.com",
+        "age": 21,
+        "year_of_study": "3rd year",
+        "shirt_size": "M",
+        "university": "\u00c9cole Polytechnique",
+        "dietary_restrictions": "None",
+        "interests": [
+            "Blockchain",
+            "Design",
+            "AR/VR",
+            "Social Good",
+            "Robotic Process Automation",
+            "Machine Learning/AI",
+            "Cybersecurity",
+            "E-commerce/Retail",
+            "Web"
+        ],
+        "preferred_role": "Development",
+        "experience_level": "Intermediate",
+        "hackathons_done": 4,
+        "objective": "My objective for this datathon is to bring home the trophy! I'm a competitive bug by nature, and I thrive under pressure. I've participated in four hackathons before, and I'm convinced that with enough caffeine, coding, and collaboration, I can take home the top prize. I'm looking forward to the rush of adrenaline and the thrill of tackling complex challenges head-on. Bring it on!",
+        "introduction": "Hey there! I'm Aur\u00e9lien Langdon, a 21-year-old student with a passion for innovation and problem-solving. When I'm not hitting the books, I love staying on the bleeding edge of tech, whether it's digging into the latest blockchains or experimenting with AR/VR. I've had a taste of competitive coding through hackathons and am hooked - the rush of adrenaline and thrill of overcoming challenges is unparalleled. I'm looking to bring home the trophy this time around and am ready to put my skills to the test.",
+        "technical_project": "One of my favorite projects was creating an AR-enabled fitness coach for iOS. I was excited to combine my interest in AR/VR with my passion for health and fitness. I worked with a team to develop an app that used AR technology to guide users through personalized workouts. It was awesome to see our app come to life, and even more rewarding to test it with friends and family, watching them get motivated to stay active. We used Xcode, ARKit, and Swift to build it, and it was a blast learning about the challenges and possibilities of AR development.",
+        "future_excitement": "The future is vast and exciting! In the next decade, I'd love to see blockchain technology transform the way we approach sustainability. Imagine an ecosystem where supply chain transparency and efficient resource allocation come together to reduce waste, conserve energy, and support responsible consumption. I envision a world where decentralized platforms connect consumers directly with eco-friendly manufacturers, reducing unnecessary packaging, and promoting a sharing economy for shared responsibility. This futuristic vision has me hyped, and I believe my skills in programming and interest in blockchain can contribute to making it a reality.",
+        "fun_fact": "When I'm not buried in code, I'm an indie drummer and music producer! I've even composed songs in Java, programming in rhythm. Who knew debugging could be a beat? Music and coding harmonize, inspiring me to create innovative solutions and killer basslines",
+        "preferred_languages": [
+            "English",
+            "French"
+        ],
+        "friend_registration": [],
+        "preferred_team_size": 4,
+        "availability": {
+            "Saturday morning": true,
+            "Saturday afternoon": true,
+            "Saturday night": true,
+            "Sunday morning": false,
+            "Sunday afternoon": true
+        },
+        "programming_skills": {
+            "Rust": 5,
+            "Android Development": 6,
+            "iOS Development": 3,
+            "Natural Language Processing": 5,
+            "Agile Methodology": 3,
+            "AWS/Azure/GCP": 5,
+            "TypeScript": 2
+        },
+        "interest_in_challenges": [
+            "Mango Challenge",
+            "AED Challenge",
+            "Restb.ai Challenge"
+        ]
+    },
+    {
+        "id": "e1e56330-6555-41ca-8028-18d751ce7f63",
+        "name": "Emily Wilson",
+        "email": "emily_wilson@gmail.com",
+        "age": 21,
+        "year_of_study": "4th year",
+        "shirt_size": "M",
+        "university": "Universitat Ramon Llull (URL)",
+        "dietary_restrictions": "Vegan",
+        "interests": [
+            "Fintech",
+            "Communication",
+            "Design",
+            "Robotic Process Automation",
+            "E-commerce/Retail",
+            "Machine Learning/AI",
+            "Databases",
+            "Lifehacks",
+            "Education"
+        ],
+        "preferred_role": "Visualization",
+        "experience_level": "Advanced",
+        "hackathons_done": 8,
+        "objective": "Hey! I'm Emily. For this datathon, my objective is all about having a blast with fellow participants! I'm super excited to mingle with new people, participate in as many events as I can, and learn from others while having fun. I'm not too stressed about winning, as I've had some experience with hackathons before and would love to focus on the social side of things. I'm hoping to make some awesome friends, enjoy some cool talks and workshops, and make this a datathon to remember!",
+        "introduction": "Hey there! I'm Emily, a 21-year-old fourth-year student who's super excited to be here at the datathon. As a tech enthusiast, I love exploring the intersection of innovation and design, from crafting user-friendly interfaces to building intelligent systems. When I'm not buried in code, you can find me chatting with friends or scoping out the latest lifehack trends. I'm all about making the most of this event, meeting new folks, and having a blast while doing it. Let's get this party started!",
+        "technical_project": "One project that I absolutely loved working on was a personal blog site I built using Flask and HTML/CSS. I designed the UI/UX using Materialize and Figma, and implemented a custom admin panel for content management using SQLAlchemy. What made this project so enjoyable was the sense of creative freedom and the ability to learn something new. I didn't have a strict goal or deadline, so I could work on it in small increments whenever I wanted. It was a great way to practice my web development skills and have something to show off when friends and family asked me to make their own websites.",
+        "future_excitement": "I'm absolutely thrilled about the prospect of exploring the intersection of AI, blockchain, and education. I envision a future where personal learning management systems are secured by blockchain and powered by AI-driven recommendation engines. Students would have a customized learning journey, with adaptive assessments and real-time feedback. It's a concept I'm already tinkering with, and I'd love to bring it to life during this datathon or in the years to come. Can you imagine it? Students able to unlock their full potential, and educators having a more streamlined way of measuring progress? That's my moonshot goal!",
+        "fun_fact": "I'm a total Harry Potter geek! When I'm not coding, you can find me re-reading the series for the umpteenth time or trying to convince my friends to let me plan a themed party. My personal motto? 'After all, to the well-organized mind, death is but the next great adventure'.",
+        "preferred_languages": [
+            "English"
+        ],
+        "friend_registration": [],
+        "preferred_team_size": 4,
+        "availability": {
+            "Saturday morning": true,
+            "Saturday afternoon": true,
+            "Saturday night": true,
+            "Sunday morning": true,
+            "Sunday afternoon": true
+        },
+        "programming_skills": {
+            "Machine Learning": 9,
+            "Flutter": 3,
+            "iOS Development": 5,
+            "Python": 6,
+            "PyTorch": 6,
+            "Blockchain": 7,
+            "UI/UX Design": 8,
+            "SQL": 5,
+            "IoT": 5,
+            "HTML/CSS": 3
+        },
+        "interest_in_challenges": [
+            "AED Challenge",
+            "Restb.ai Challenge",
+            "Mango Challenge"
+        ]
+    },
+    {
+        "id": "867ef49e-3fe3-4818-a3ce-b397615ec31a",
+        "name": "Avery Rae Thompson",
+        "email": "avery_rae_thompson@gmail.com",
+        "age": 21,
+        "year_of_study": "4th year",
+        "shirt_size": "S",
+        "university": "Universitat de Barcelona (UB)",
+        "dietary_restrictions": "None",
+        "interests": [
+            "Databases",
+            "Quantum",
+            "IoT",
+            "Enterprise"
+        ],
+        "preferred_role": "Development",
+        "experience_level": "Advanced",
+        "hackathons_done": 6,
+        "objective": "Hey, I'm Avery! As a seasoned hackathon veteran, my main goal for this datathon is to crush it and take home the top prize. I've honed my programming skills through extensive coding and previous hackathons, and I'm now seeking the ultimate challenge. I'm laser-focused on winning and don't plan on settling for anything less. Expect me to be glued to my laptop, pouring over lines of code, and collaborating with my teammates to create a game-changing solution. Bring it on - I'm ready to take on the competition and prove my prowess.",
+        "introduction": "Hey everyone! I'm Avery, a determined 21-year-old data aficionado. With extensive experience in programming, I'm confident in my ability to crush challenges head-on. As a fourth-year student, I've developed a knack for solving complex problems and a passion for creating innovative solutions. My experience with databases and machine learning has given me a solid foundation, and I'm eager to push the boundaries of what's possible. My friends would say I'm a perfectionist, always striving to outdo myself and bring the best out of my teammates. I'm all set to take on the datathon and give it my all.",
+        "technical_project": "I've had the blast working on a personal project that utilizes my passion for machine learning and IoT. I created a smart gardening system that uses facial recognition to detect and track plant growth. I used PyTorch to train a model that analyzes images of plants, PostgreSQL to store data, and a custom-built Raspberry Pi-based sensor array to capture images and sensor readings. The project allowed me to combine my love for quantum physics (plant growth is fascinating!) with my skills in programming. I even got to work with a local nursery to collect and label a massive dataset.",
+        "future_excitement": "I'm thrilled to dive into a topic that excites me the most - applying Quantum Computing to improve the efficiency of complex databases. Imagine having the capacity to process massive amounts of data in parallel, unlocking groundbreaking insights that would revolutionize various industries. I'm passionate about making this a reality and am already exploring the feasibility of integrating PostgreSQL with Quantum Computing using programming languages like PyTorch and SQL. My ultimate goal is to develop a pioneering solution that can harness the power of Quantum Computing to optimize database queries, transforming the data processing landscape forever.",
+        "fun_fact": "Hey! When I'm not coding, I'm usually jamming to old-school hip-hop and rock on my guitar. Fun fact: I used to play a gig at a local music venue under the pseudonym 'Axel Rage' - who knew databases and beats could harmonize so well?",
+        "preferred_languages": [
+            "English"
+        ],
+        "friend_registration": [],
+        "preferred_team_size": 4,
+        "availability": {
+            "Saturday morning": true,
+            "Saturday afternoon": true,
+            "Saturday night": true,
+            "Sunday morning": true,
+            "Sunday afternoon": true
+        },
+        "programming_skills": {
+            "PostgreSQL": 9,
+            "SQL": 9,
+            "PyTorch": 5,
+            "Flutter": 9,
+            "Docker": 3,
+            "iOS Development": 9,
+            "Java": 4,
+            "Android Development": 7,
+            "Python": 8,
+            "HTML/CSS": 3
+        },
+        "interest_in_challenges": [
+            "Restb.ai Challenge",
+            "Mango Challenge",
+            "AED Challenge"
+        ]
+    },
+    {
+        "id": "d1c120a3-498a-4a25-8928-f1128e31710d",
+        "name": "Ling Wong",
+        "email": "ling_wong@gmail.com",
+        "age": 20,
+        "year_of_study": "3rd year",
+        "shirt_size": "S",
+        "university": "Universitat Pompeu Fabra (UPF)",
+        "dietary_restrictions": "Vegetarian",
+        "interests": [
+            "E-commerce/Retail",
+            "DevOps",
+            "Gaming",
+            "Machine Learning/AI",
+            "Productivity"
+        ],
+        "preferred_role": "Development",
+        "experience_level": "Intermediate",
+        "hackathons_done": 5,
+        "objective": "I'm all about going in to win. My main objective is to crush the competition and take home that top prize. I've been to five hackathons before and I know what it takes to come out on top. I've got a solid foundation in programming and I'm ready to bring my A-game to this datathon. My goal is to outsmart and outwork everyone else and be the last one standing. I'm not interested in half-baked projects or just showing up for the free food - I want to bring a solution that's innovative, scalable, and a game-changer. Expect tough competition from me!",
+        "introduction": "Hi, I'm Ling! I'm a 20-year-old third-year student with a passion for building innovative solutions. In my free time, you can find me coding up a storm or gaming with my friends. With a solid foundation in programming, I've got my sights set on winning this datathon. I'm all about crafting game-changing projects that can scale and make a real impact. I'm not afraid to put in the hard work and long hours to get the job done. I'm excited to see what this datathon has in store and to give it my all to take home that top prize!",
+        "technical_project": "I recently worked on a personal project where I built a simple chatbot using natural language processing (NLP) techniques to help my friends manage their gaming teams. It was really enjoyable as it combined my interests in gaming and ML/AI. I wrote a custom algorithm to understand gaming terminology and create a conversational interface for teams to manage rosters, assign roles, and track performance. The best part was seeing my friends use it and receiving feedback on how it improved their teamwork. It was a great exercise in applying theoretical knowledge to a practical problem!",
+        "future_excitement": "I'm thrilled to think about the potential projects that are on the horizon! In the next 10 years, I'm ecstatic about the prospect of working on AI-powered retail platforms that use machine learning to optimize inventory management, personalized product recommendations, and seamless checkout experiences for customers. I envision using natural language processing to enable voice-controlled customer service and IoT sensors to monitor inventory levels in real-time. My goal is to revolutionize the retail industry by creating an immersive and personalized shopping experience that bridges the gap between the physical and digital worlds.",
+        "fun_fact": "Hey! Fun fact: I'm secretly a gaming YouTuber on the side! I love streaming my gaming sessions and interacting with my growing audience. My gaming PC is my pride and joy, and I even modified it myself. Who knew Datathon and gaming channels could coexist?",
+        "preferred_languages": [],
+        "friend_registration": [],
+        "preferred_team_size": 4,
+        "availability": {
+            "Saturday morning": false,
+            "Saturday afternoon": false,
+            "Saturday night": true,
+            "Sunday morning": true,
+            "Sunday afternoon": true
+        },
+        "programming_skills": {
+            "Natural Language Processing": 4,
+            "Android Development": 5,
+            "iOS Development": 7,
+            "IoT": 5,
+            "Java": 4,
+            "React": 2,
+            "Go": 7,
+            "Blockchain": 5
+        },
+        "interest_in_challenges": [
+            "Restb.ai Challenge",
+            "AED Challenge",
+            "Mango Challenge"
+        ]
+    },
+    {
+        "id": "d4d98f7a-d956-4ef5-ab2c-aed24b35a045",
+        "name": "Alexander Ryder",
+        "email": "alexander_ryder@gmail.com",
+        "age": 22,
+        "year_of_study": "4th year",
+        "shirt_size": "M",
+        "university": "Universitat Pompeu Fabra (UPF)",
+        "dietary_restrictions": "Other",
+        "interests": [
+            "Design",
+            "Mobile",
+            "Web"
+        ],
+        "preferred_role": "Visualization",
+        "experience_level": "Intermediate",
+        "hackathons_done": 5,
+        "objective": "Hey there! I'm Alex, and I'm super excited to be part of this datathon. Honestly, I'm not here to be a competitive shark, and I don't care if I win or not. What I'm looking for is a blast, some amazing new friends, and an experience that'll make me forget about my stressful uni schedule. I want to learn new stuff, try new things, and just have a laugh with fellow participants. Whether it's hacking away on some code, attending a workshop, or busting out some dance moves in the arcade room - I'm all in! Bring it on!",
+        "introduction": "Hey there! I'm Alex, a fourth-year student on a mission to make this datathon an unforgettable adventure. I'm all about creativity, code, and design, and I'm stoked to see what this event brings. With a passion for user experience and a knack for coding, I'm looking forward to collaborating with fellow enthusiasts, trying out new things, and maybe even making a few mistakes along the way. Let's make this a datathon to remember!",
+        "technical_project": "I'm super stoked to share a project I worked on last summer - a mobile app for a local animal shelter! As a huge animal lover, I was pumped to apply my Android Development skills to help the shelter find forever homes for their furry friends. I designed a user-friendly app that allows people to browse the animals available for adoption, filter by species, age, and size, and even initiate the adoption process right from the app. It was an amazing feeling seeing my code come to life and knowing I was making a difference in my community.",
+        "future_excitement": "As a UI/UX enthusiast, I'm thrilled to think about designing and developing accessible and sustainable technologies that can bridge the gap between humans and the environment. I'd love to be part of a project that leverages blockchain, IoT, and AI to monitor and mitigate the impact of climate change. Imagine an app that rewards citizens for contributing to community-driven sustainable initiatives, making eco-friendliness mainstream. The prospect of combining my skills with a passionate team to create such a platform fills me with excitement and purpose, reminding me why I embarked on this datathon journey in the first place!",
+        "fun_fact": "Here's one: When I'm not coding, I love to rock out on my old-school guitar - yes, it's that weird one with the worn-out fretboard and awkwardly-shaped body - and belt out my favorite 90s tunes! Nothing beats the stress of exams like a good dose of grunge and emo",
+        "preferred_languages": [
+            "English"
+        ],
+        "friend_registration": [],
+        "preferred_team_size": 4,
+        "availability": {
+            "Saturday morning": true,
+            "Saturday afternoon": true,
+            "Saturday night": true,
+            "Sunday morning": true,
+            "Sunday afternoon": true
+        },
+        "programming_skills": {
+            "Android Development": 2,
+            "UI/UX Design": 2,
+            "Blockchain": 7,
+            "MongoDB": 7,
+            "JavaScript": 6,
+            "Rust": 6,
+            "Docker": 6
+        },
+        "interest_in_challenges": [
+            "Mango Challenge",
+            "Restb.ai Challenge",
+            "AED Challenge"
+        ]
+    }
+]
