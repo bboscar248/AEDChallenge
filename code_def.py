@@ -154,7 +154,7 @@ def group_win_by_availability_and_balance(participants: List[Participant], requi
 
 def main():
     try:
-        participants = load_participants("prueba.json")
+        participants = load_participants("datathon_participants.json")
         
 
         objective_groups = group_by_objective(participants)
