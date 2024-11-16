@@ -89,7 +89,7 @@ def group_learn_fun_by_interests_and_friends(participants: List[Participant]) ->
         current_participant = available_participants.pop(0)
         current_group.append(current_participant)
         
-        # Añadir amigos al grupo
+   
         friends_to_add = []
         for friend_id in current_participant.friend_registration:
             for i, part in enumerate(available_participants):
@@ -99,13 +99,13 @@ def group_learn_fun_by_interests_and_friends(participants: List[Participant]) ->
         
         current_group.extend(friends_to_add)
         
-        # Agrupar por intereses
+       
         for p in available_participants[:]:
             if set(p.interests).intersection(current_participant.interests):
                 current_group.append(p)
                 available_participants.remove(p)
         
-        # Asegurarse de que no haya más de 4 personas en el grupo
+    
         if len(current_group) > 4:
             current_group = current_group[:4]
         
@@ -125,7 +125,7 @@ def group_win_by_availability_and_balance(participants: List[Participant], requi
         current_group.append(current_participant)
         assigned_ids.add(current_participant.id)
         
-        # Añadir amigos al grupo
+    
         for friend_id in current_participant.friend_registration:
             for i, part in enumerate(available_participants):
                 if part.id == friend_id and part.id not in assigned_ids:
@@ -133,7 +133,7 @@ def group_win_by_availability_and_balance(participants: List[Participant], requi
                     assigned_ids.add(part.id)
                     break
         
-        # Intentar balancear el grupo con personas de habilidades y experiencia similares
+      
         current_experience_points = sum(get_experience_points(p) for p in current_group)
         current_skill_points = sum(get_total_programming_skill(p) for p in current_group)
         
@@ -143,9 +143,9 @@ def group_win_by_availability_and_balance(participants: List[Participant], requi
                 current_group.append(p)
                 available_participants.remove(p)
         
-        # Asegurarse de que el grupo tiene exactamente 4 personas
+     
         while len(current_group) < 4 and available_participants:
-            # Añadir más personas hasta completar el grupo de 4
+         
             next_participant = available_participants.pop(0)
             current_group.append(next_participant)
         
@@ -176,7 +176,7 @@ def main():
                 print(f"    - {participant.name} (ID: {participant.id})")
         
 
-        print("\nGrupos that wanna win:")
+        print("\nGroups that wanna win:")
         for i, group in enumerate(win_groups):
             print(f"Group {i+1}:")
             for participant in group:
