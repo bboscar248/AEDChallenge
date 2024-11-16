@@ -1,0 +1,1 @@
+#Classificar les persones segons les dades que han escrit en 
