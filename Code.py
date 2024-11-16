@@ -1,6 +1,3 @@
-
-#Classifiquem les persones en grups de 4 segons les dades que han escrit en el fitxer 
-
 #CLassifiquem les persones en grups de 4 segons les dades que han escrit en el fitxer "participant.py".
 
 from participant import Participant, load_participants
@@ -46,7 +43,7 @@ if __name__ == "__main__":
 
         # Classificar per universitat
         university_classifications = classify_participants_by_university(participants)
-        print("\nClasificación por universidad:")
+        print("\nClassificació per universitat:")
         display_classifications(university_classifications)
 
     except Exception as e:
