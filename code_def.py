@@ -174,7 +174,7 @@ def main():
             for participant in group:
                 print(f"    - {participant.name} (ID: {participant.id})")
         
-        # Imprimir los grupos de participantes que quieren ganar
+        
         print("\nGrupos that wanna win:")
         for i, group in enumerate(win_groups):
             print(f"Group {i+1}:")
