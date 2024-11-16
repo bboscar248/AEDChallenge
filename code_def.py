@@ -70,16 +70,16 @@ def filter_by_availability(participants: List[Participant], required_periods: Li
     return available_participants
 
 
-# Funciones de agrupamiento
+
 def group_by_objective(participants: List[Participant]) -> Dict[str, List[Participant]]:
     win_group = []
     learn_fun_group = []
     for p in participants:
-        if "win" in p.objective.lower():  # Los que quieren ganar tienen "win" en el objetivo
+        if "to win" in p.objective.lower(): 
             win_group.append(p)
         else:
             learn_fun_group.append(p)
-    return {"win": win_group, "learn_fun": learn_fun_group}
+    return {"to win": win_group, "learn_fun": learn_fun_group}
 
 
 def group_learn_fun_by_interests_and_friends(participants: List[Participant]) -> List[List[Participant]]:
