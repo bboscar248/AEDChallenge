@@ -1,42 +1,50 @@
 #CLassifiquem les persones en grups de 4 segons les dades que han escrit en el fitxer "participant.py".
 
+from participant import Participant, load_participants
 from collections import defaultdict
+from typing import List, Dict
 
-def classify_participants(participants: List[Participant]) -> Dict[str, List[Participant]]:
+def classify_participants_by_experience(participants: List[Participant]) -> Dict[str, List[Participant]]:
     """
-    Clasifica a los participantes según su nivel de experiencia y habilidades de programación.
+    Clasifica a los participantes según su nivel de experiencia.
     """
-    classifications = {
-        "Beginner": [],
-        "Intermediate": [],
-        "Advanced": [],
-    }
-    
+    classifications = defaultdict(list)
     for participant in participants:
-        if participant.experience_level in classifications:
-            classifications[participant.experience_level].append(participant)
-    
+        classifications[participant.experience_level].append(participant)
     return classifications
 
+def classify_participants_by_university(participants: List[Participant]) -> Dict[str, List[Participant]]:
+    """
+    Clasifica a los participantes por universidad.
+    """
+    classifications = defaultdict(list)
+    for participant in participants:
+        classifications[participant.university].append(participant)
+    return classifications
 
 def display_classifications(classifications: Dict[str, List[Participant]]):
     """
-    Muestra las clasificaciones de forma organizada.
+    Imprime las clasificaciones de manera organizada.
     """
     for category, participants in classifications.items():
         print(f"\n=== {category} ===")
-        for p in participants:
-            print(f"- {p.name} ({p.email}) - {p.university}")
+        for participant in participants:
+            print(f"- {participant.name} ({participant.email}) - {participant.university}")
 
-
-# Ejemplo de uso:
 if __name__ == "__main__":
-    # Cargar datos de participantes desde un archivo JSON
     try:
+        # Cargar los participantes desde un archivo JSON
         participants = load_participants("participants.json")
-        # Clasificar participantes
-        classified = classify_participants(participants)
-        # Mostrar clasificaciones
-        display_classifications(classified)
+        
+        # Clasificar por nivel de experiencia
+        experience_classifications = classify_participants_by_experience(participants)
+        print("Clasificación por nivel de experiencia:")
+        display_classifications(experience_classifications)
+
+        # Clasificar por universidad
+        university_classifications = classify_participants_by_university(participants)
+        print("\nClasificación por universidad:")
+        display_classifications(university_classifications)
+
     except Exception as e:
         print(f"Error: {e}")
