@@ -1,51 +1,68 @@
-#CLassifiquem les persones en grups de 4 segons les dades que han escrit en el fitxer "participant.py".
-
 from participant import Participant, load_participants
-from collections import defaultdict
-from typing import List, Dict
+from sklearn.cluster import AgglomerativeClustering
+import numpy as np
+from typing import List
 
-def classify_participants_by_experience(participants: List[Participant]) -> Dict[str, List[Participant]]:
+def calcula_vector_participant(participant: Participant) -> np.ndarray:
     """
-    Classifica els participants segons el seu nivell d'experiència.
+    Converteix un participant en un vector numèric per al clustering.
     """
-    classifications = defaultdict(list)
-    for participant in participants:
-        classifications[participant.experience_level].append(participant)
-    return classifications
+    # Codificació d'experiència (Beginner: 0, Intermediate: 1, Advanced: 2)
+    experience_mapping = {"Beginner": 0, "Intermediate": 1, "Advanced": 2}
+    experience_level = experience_mapping[participant.experience_level]
+    
+    # Tamany de programació: Número d'habilitats que coneix
+    programming_skills = len(participant.programming_skills)
+    
+    # Número d'interessos
+    interests = len(participant.interests)
+    
+    # Hackathons fets
+    hackathons_done = participant.hackathons_done
+    
+    # Tornem un vector amb els valors numèrics
+    return np.array([experience_level, programming_skills, interests, hackathons_done])
 
-def classify_participants_by_university(participants: List[Participant]) -> Dict[str, List[Participant]]:
+def agrupa_participants_clustering(participants: List[Participant], num_grups: int) -> List[List[Participant]]:
     """
-    Classifica els participants segons la universitat.
+    Agrupa els participants utilitzant un mètode de clustering.
     """
-    classifications = defaultdict(list)
-    for participant in participants:
-        classifications[participant.university].append(participant)
-    return classifications
+    # Convertir els participants en vectors numèrics
+    vectors = np.array([calcula_vector_participant(p) for p in participants])
 
-def display_classifications(classifications: Dict[str, List[Participant]]):
+    # Aplicar Agglomerative Clustering
+    clustering = AgglomerativeClustering(n_clusters=num_grups, linkage="ward")
+    labels = clustering.fit_predict(vectors)
+
+    # Crear grups basats en els labels
+    grups = [[] for _ in range(num_grups)]
+    for participant, label in zip(participants, labels):
+        grups[label].append(participant)
+    
+    return grups
+
+def mostra_equips(equips: List[List[Participant]]):
     """
-    Imprimeix les classificacions de manera organitzada.
+    Mostra els equips formats.
     """
-    for category, participants in classifications.items():
-        print(f"\n=== {category} ===")
-        for participant in participants:
+    for i, equip in enumerate(equips, 1):
+        print(f"\nEquip {i}:")
+        for participant in equip:
             print(f"- {participant.name} ({participant.email}) - {participant.university}")
 
 if __name__ == "__main__":
     try:
-        # Carregar els participants des d'un archiu JSON
+        # Carregar els participants des del fitxer JSON
         participants = load_participants("participants.json")
-        
-        # Classificar per nivell d'experiència
-        experience_classifications = classify_participants_by_experience(participants)
-        print("Classificació per nivell d'experiència:")
-        display_classifications(experience_classifications)
 
-        # Classificar per universitat
-        university_classifications = classify_participants_by_university(participants)
-        print("\nClassificació per universitat:")
-        display_classifications(university_classifications)
+        # Especificar el nombre de grups
+        num_grups = 4  # Canvia aquest valor segons les necessitats
+
+        # Agrupar els participants amb clustering
+        equips = agrupa_participants_clustering(participants, num_grups)
+
+        # Mostrar els equips
+        mostra_equips(equips)
 
     except Exception as e:
         print(f"Error: {e}")
-
