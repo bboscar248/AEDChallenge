@@ -145,7 +145,7 @@ def group_participants(participants: List[Participant]) -> List[List[Participant
 # 8. Función principal
 def main():
     try:
-        participants = load_participants("participants.json")
+        participants = load_participants("prueba.json")
         groups_win, learn_fun_groups = group_participants(participants)
         
         print("Win Objective Groups:")
