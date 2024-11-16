@@ -73,7 +73,7 @@ def group_by_objective(participants: List[Participant]) -> Dict[str, List[Partic
     win_group = []
     learn_fun_group = []
     for p in participants:
-        if "to win" in p.objective.lower(): 
+        if "to win" in p.objective.lower() or "top" in p.objective.lower(): 
             win_group.append(p)
         else:
             learn_fun_group.append(p)
