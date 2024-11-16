@@ -6,7 +6,7 @@ from typing import List, Dict
 
 def classify_participants_by_experience(participants: List[Participant]) -> Dict[str, List[Participant]]:
     """
-    Clasifica a los participantes según su nivel de experiencia.
+    Classifica els participants segons el seu nivell d'experiència.
     """
     classifications = defaultdict(list)
     for participant in participants:
@@ -15,7 +15,7 @@ def classify_participants_by_experience(participants: List[Participant]) -> Dict
 
 def classify_participants_by_university(participants: List[Participant]) -> Dict[str, List[Participant]]:
     """
-    Clasifica a los participantes por universidad.
+    Classifica els participants segons la universitat.
     """
     classifications = defaultdict(list)
     for participant in participants:
