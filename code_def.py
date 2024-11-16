@@ -166,7 +166,7 @@ def group_win_by_availability_and_balance(participants: List[Participant], requi
 # Función principal para ejecutar el código
 def main():
     try:
-        participants = load_participants("pruebas.json")
+        participants = load_participants("prueba.json")
         
         # Separar por objetivo (win vs. learn_fun)
         objective_groups = group_by_objective(participants)
