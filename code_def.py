@@ -164,7 +164,7 @@ def main():
         
 
         required_periods = ["Saturday morning", "Saturday afternoon", "Saturday night", "Sunday morning", "Sunday afternoon"]
-        win_groups = group_win_by_availability_and_balance(objective_groups["win"], required_periods)
+        win_groups = group_win_by_availability_and_balance(objective_groups["to win"], required_periods)
         
 
         print("\nGroups of participants that wanna fun/learn/make friends:")
