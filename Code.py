@@ -1,7 +1,3 @@
-
-#Classifiquem les persones en grups de 4 segons les dades que han escrit en el fitxer 
-
-
 #CLassifiquem les persones en grups de 4 segons les dades que han escrit en el fitxer "participant.py".
 
 from participant import Participant, load_participants
