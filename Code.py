@@ -24,7 +24,7 @@ def classify_participants_by_university(participants: List[Participant]) -> Dict
 
 def display_classifications(classifications: Dict[str, List[Participant]]):
     """
-    Imprime las clasificaciones de manera organizada.
+    Imprimeix les classificacions de manera organitzada.
     """
     for category, participants in classifications.items():
         print(f"\n=== {category} ===")
@@ -33,15 +33,15 @@ def display_classifications(classifications: Dict[str, List[Participant]]):
 
 if __name__ == "__main__":
     try:
-        # Cargar los participantes desde un archivo JSON
+        # Carregar els participants des d'un archiu JSON
         participants = load_participants("participants.json")
         
-        # Clasificar por nivel de experiencia
+        # Classificar per nivell d'experiència
         experience_classifications = classify_participants_by_experience(participants)
         print("Clasificación por nivel de experiencia:")
         display_classifications(experience_classifications)
 
-        # Clasificar por universidad
+        # Classificar per universitat
         university_classifications = classify_participants_by_university(participants)
         print("\nClasificación por universidad:")
         display_classifications(university_classifications)
