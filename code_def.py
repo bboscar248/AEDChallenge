@@ -106,9 +106,10 @@ def group_by_objective(participants: List[Participant]) -> Dict[str, List[Partic
 
 
 def group_learn_fun_by_interests_and_friends(participants: List[Participant]) -> List[List[Participant]]:
-    """Agrupa a los participantes que quieren aprender o hacer amigos según sus intereses y amigos."""
+    """Agrupa a los participantes que quieren aprender o hacer amigos según sus intereses y amigos, con un límite de 4 personas por grupo."""
     groups = []
     available_participants = participants.copy()
+    
     while available_participants:
         current_group = []
         current_participant = available_participants.pop(0)
@@ -130,12 +131,16 @@ def group_learn_fun_by_interests_and_friends(participants: List[Participant]) ->
                 current_group.append(p)
                 available_participants.remove(p)
         
+        # Asegurarse de que no haya más de 4 personas en el grupo
+        if len(current_group) > 4:
+            current_group = current_group[:4]
+        
         groups.append(current_group)
     return groups
 
 
 def group_win_by_availability_and_balance(participants: List[Participant], required_periods: List[str]) -> List[List[Participant]]:
-    """Agrupa a los participantes que quieren ganar según su disponibilidad, nivel de experiencia y habilidades."""
+    """Agrupa a los participantes que quieren ganar según su disponibilidad, nivel de experiencia y habilidades, con un límite de 4 personas por grupo."""
     available_participants = filter_by_availability(participants, required_periods)
     
     # Agrupar por disponibilidad
@@ -165,6 +170,10 @@ def group_win_by_availability_and_balance(participants: List[Participant], requi
                abs(sum(get_total_programming_skill(p) for p in current_group) - current_skill_points) <= 5:
                 current_group.append(p)
                 available_participants.remove(p)
+        
+        # Asegurarse de que no haya más de 4 personas en el grupo
+        if len(current_group) > 4:
+            current_group = current_group[:4]
         
         groups.append(current_group)
     
