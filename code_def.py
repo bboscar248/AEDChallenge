@@ -4,75 +4,130 @@ import uuid
 from dataclasses import dataclass
 from typing import Dict, List, Literal
 from collections import defaultdict
+from participant import Participant  # Importamos la clase Participant desde participant.py
 
-# ... (Participant class and load_participants function from previous response) ...
+# 1. Función para cargar los participantes
+def load_participants(path: str) -> List[Participant]:
+    if not pathlib.Path(path).exists():
+        raise FileNotFoundError(f"The file {path} does not exist, are you sure you're using the correct path?")
+    if not pathlib.Path(path).suffix == ".json":
+        raise ValueError(f"The file {path} is not a JSON file, are you sure you're using the correct file?")
 
+    return [Participant(**participant) for participant in json.load(open(path))]
 
+# 2. Función para agrupar participantes
 def group_participants(participants: List[Participant]) -> List[List[Participant]]:
-    """Groups participants based on preferences."""
-
-    # 1. Prioritize Preferred Languages
-    language_groups = defaultdict(list)
-    for p in participants:
-        for lang in p.preferred_languages:
-            language_groups[lang].append(p)
-
-    # 2. Prioritize Preferred Team Size (within language groups)
-    grouped_by_size = defaultdict(list)
-    for lang, group in language_groups.items():
-        for p in group:
-            grouped_by_size[p.preferred_team_size].append(p)
-
-    # 3. Prioritize Objective (win vs. learn/fun)
+    """Agrupa a los participantes según sus preferencias y objetivos."""
+    
+    # 1. Agrupar por objetivos (ganar vs aprender/divertirse)
     win_objective = []
     learn_fun_objective = []
-    for size_group in grouped_by_size.values():
-        for p in size_group:
-            if "win" in p.objective.lower() or "competition" in p.objective.lower() or "prize" in p.objective.lower():
-                win_objective.append(p)
-            else:
-                learn_fun_objective.append(p)
+    
+    for p in participants:
+        if "win" in p.objective.lower() or "competition" in p.objective.lower() or "prize" in p.objective.lower():
+            win_objective.append(p)
+        else:
+            learn_fun_objective.append(p)
 
-    # 4. Consider Friends (this part is complex and requires further refinement)
-    # A simple approach: try to keep friends together as much as possible within existing groups.
-    final_groups = []
-    #Process win objective group
-    final_groups.extend(form_groups_with_friends(win_objective))
-    #Process learn/fun objective group
-    final_groups.extend(form_groups_with_friends(learn_fun_objective))
+    # 2. Agrupar a los que quieren ganar por nivel de experiencia
+    win_objective_sorted = sorted(win_objective, key=lambda p: p.get_experience_points(), reverse=True)
+    
+    groups_win = []  # Lista final de grupos para los participantes que quieren ganar
+    current_group = []
+    current_experience_points = 0
 
-    return final_groups
+    for p in win_objective_sorted:
+        p_experience = p.get_experience_points()
+        # Si la diferencia de puntos de experiencia excede los 6, crear un nuevo grupo
+        if current_group and current_experience_points + p_experience - min(p.get_experience_points() for p in current_group) > 6:
+            groups_win.append(current_group)
+            current_group = []
+            current_experience_points = 0
+        
+        current_group.append(p)
+        current_experience_points += p_experience
 
+    # Asegurarse de agregar el último grupo
+    if current_group:
+        groups_win.append(current_group)
 
-def form_groups_with_friends(participants: List[Participant]) -> List[List[Participant]]:
-    """Attempts to keep friends together when forming groups."""
-    groups = []
-    available_participants = participants.copy()
-    while available_participants:
-        current_group = [available_participants.pop(0)]
-        friends_to_add = []
-        for p in current_group:
-            for friend_id in p.friend_registration:
-                for i, part in enumerate(available_participants):
-                    if part.id == friend_id:
-                        friends_to_add.append(available_participants.pop(i))
-                        break
-        current_group.extend(friends_to_add)
-        groups.append(current_group)
-    return groups
+    # 3. Agrupar por habilidades de programación (diferencia no mayor a 5)
+    def group_by_programming_skills(groups: List[List[Participant]]) -> List[List[Participant]]:
+        final_groups = []
+        for group in groups:
+            current_group = []
+            current_skill_points = 0
+            for p in group:
+                p_skills = p.get_total_programming_skill()
+                # Si la diferencia de puntos de habilidades excede los 5, iniciar un nuevo grupo
+                if current_group and abs(current_skill_points + p_skills - sum([x.get_total_programming_skill() for x in current_group])) > 5:
+                    final_groups.append(current_group)
+                    current_group = []
+                    current_skill_points = 0
+                current_group.append(p)
+                current_skill_points += p_skills
+            
+            if current_group:
+                final_groups.append(current_group)
+        
+        return final_groups
+    
+    groups_win = group_by_programming_skills(groups_win)
 
+    # 4. Si no se pueden cumplir las restricciones, intentar cambiar el tamaño de los equipos
+    def adjust_team_sizes(groups: List[List[Participant]]):
+        for group in groups:
+            total_skill_points = sum(p.get_total_programming_skill() for p in group)
+            if total_skill_points > 5:  # Si la diferencia es mayor a 5, pedir revisión
+                print(f"Group with total programming skill points exceeding the allowed difference. Consider changing preferred team size for this group.")
+    
+    adjust_team_sizes(groups_win)
 
+    # 5. Agrupar por intereses para los participantes de 'learn/fun'
+    def group_by_interests(participants: List[Participant]) -> List[List[Participant]]:
+        """Agrupa a los participantes por intereses similares."""
+        interest_groups = defaultdict(list)
+        
+        # Usamos un enfoque de coincidencia de intereses para agrupar a los participantes
+        for p in participants:
+            for interest in p.interests:
+                interest_groups[interest].append(p)
+        
+        # Crear grupos de participantes con intereses similares
+        final_groups = []
+        for group in interest_groups.values():
+            # Puedes aplicar más lógica para dividir los grupos si son demasiado grandes.
+            final_groups.append(group)
+        
+        return final_groups
+
+    # Agrupar a los que quieren aprender/divertirse por sus intereses
+    learn_fun_groups = group_by_interests(learn_fun_objective)
+
+    # 6. Ahora tenemos los grupos de 'ganar' y 'aprender/divertirse' agrupados por intereses
+    return groups_win, learn_fun_groups
+
+# 3. Función principal
 def main():
     try:
         participants = load_participants("participants.json")
-        groups = group_participants(participants)
-        for i, group in enumerate(groups):
+        groups_win, learn_fun_groups = group_participants(participants)
+        
+        print("Win Objective Groups:")
+        for i, group in enumerate(groups_win):
             print(f"Group {i+1}:")
             for participant in group:
                 print(f"  - {participant.name} ({participant.preferred_languages}, {participant.objective})")
+        
+        print("\nLearn/Fun Objective Groups:")
+        for i, group in enumerate(learn_fun_groups):
+            print(f"Group {i+1}:")
+            for participant in group:
+                print(f"  - {participant.name} ({participant.interests}, {participant.objective})")
+    
     except (FileNotFoundError, ValueError) as e:
         print(f"Error: {e}")
 
-
-if _name_ == "_main_":
+# Asegurarse de que la función main se ejecute solo si es el script principal
+if __name__ == "__main__":
     main()
