@@ -176,9 +176,6 @@ def main():
     try:
         participants = load_participants("prueba.json")
         
-        # Agrupar por tamaño de equipo preferido
-        team_size_groups = group_by_preferred_team_size(participants)
-        
         # Separar por objetivo (win vs. learn_fun)
         objective_groups = group_by_objective(participants)
         
@@ -189,19 +186,14 @@ def main():
         required_periods = ["Saturday morning", "Saturday afternoon", "Saturday night", "Sunday morning", "Sunday afternoon"]
         win_groups = group_win_by_availability_and_balance(objective_groups["win"], required_periods)
         
-        # Imprimir los grupos, priorizando el tamaño de equipo preferido
-        print("Grupos según tamaño de equipo preferido:")
-        for size, group in team_size_groups.items():
-            print(f"Tamaño de equipo {size}:")
-            for participant in group:
-                print(f"    - {participant.name} (ID: {participant.id})")
-        
+        # Imprimir los grupos de participantes que quieren aprender/fun/amigos
         print("\nGrupos de participantes que quieren aprender/fun/amigos:")
         for i, group in enumerate(learn_fun_groups):
             print(f"Grupo {i+1}:")
             for participant in group:
                 print(f"    - {participant.name} (ID: {participant.id})")
         
+        # Imprimir los grupos de participantes que quieren ganar
         print("\nGrupos de participantes que quieren ganar:")
         for i, group in enumerate(win_groups):
             print(f"Grupo {i+1}:")
