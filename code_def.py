@@ -76,20 +76,12 @@ def filter_by_availability(participants: List[Participant], required_periods: Li
 
 
 # Funciones de agrupamiento
-def group_by_preferred_team_size(participants: List[Participant]) -> Dict[int, List[Participant]]:
-    """Agrupa a los participantes según su tamaño de equipo preferido."""
-    size_groups = defaultdict(list)
-    for p in participants:
-        size_groups[p.preferred_team_size].append(p)
-    return size_groups
-
-
 def group_by_objective(participants: List[Participant]) -> Dict[str, List[Participant]]:
-    """Separa a los participantes según su objetivo (ganar o aprender/fun/amigos)."""
+    """Separa a los participantes según su objetivo (ganar o aprender/divertirse)."""
     win_group = []
     learn_fun_group = []
     for p in participants:
-        if "win" in p.objective.lower() or "competition" in p.objective.lower() or "prize" in p.objective.lower():
+        if "win" in p.objective.lower():  # Los que quieren ganar tienen "win" en el objetivo
             win_group.append(p)
         else:
             learn_fun_group.append(p)
@@ -158,7 +150,7 @@ def group_win_by_availability_and_balance(participants: List[Participant], requi
         
         for p in available_participants[:]:
             if abs(sum(get_experience_points(p) for p in current_group) - current_experience_points) <= 6 and \
-               abs(sum(get_total_programming_skill(p) for p in current_group) - current_skill_points) <= 5:
+               abs(sum(get_total_programming_skill(p) for p in current_group) - current_skill_points) <= 10:
                 current_group.append(p)
                 available_participants.remove(p)
         
