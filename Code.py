@@ -1,6 +1,5 @@
-<<<<<<< HEAD
 #Classifiquem les persones en grups de 4 segons les dades que han escrit en el fitxer 
-=======
+
 #CLassifiquem les persones en grups de 4 segons les dades que han escrit en el fitxer "participant.py".
 
 from participant import Participant, load_participants
@@ -51,4 +50,3 @@ if __name__ == "__main__":
 
     except Exception as e:
         print(f"Error: {e}")
->>>>>>> 199807684f5f50090247a16191fc461f82e3bd47
