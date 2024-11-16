@@ -1,1 +1,1 @@
-#
+#CLassifiquem les persones en grups de 4 segons les dades que han escrit en el fitxer 
