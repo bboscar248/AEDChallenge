@@ -6,10 +6,9 @@ from typing import Dict, List, Literal
 from collections import defaultdict
 
 
-# Definición de la clase Participant
 @dataclass
 class Participant:
-    id: uuid.UUID  # Identificador único
+    id: uuid.UUID
     name: str
     email: str
     age: int
@@ -37,7 +36,6 @@ class Participant:
 
 
 def load_participants(path: str) -> List[Participant]:
-    """Carga los participantes desde un archivo JSON."""
     if not pathlib.Path(path).exists():
         raise FileNotFoundError(f"The file {path} does not exist.")
     if pathlib.Path(path).suffix != ".json":
@@ -49,7 +47,7 @@ def load_participants(path: str) -> List[Participant]:
     return [Participant(**participant) for participant in data]
 
 
-# Funciones de puntuación por experiencia y habilidades
+
 def get_experience_points(participant: Participant) -> int:
     """Devuelve los puntos basados en el nivel de experiencia del participante."""
     experience_points = {
@@ -61,12 +59,10 @@ def get_experience_points(participant: Participant) -> int:
 
 
 def get_total_programming_skill(participant: Participant) -> int:
-    """Devuelve el total de habilidades de programación del participante."""
     return sum(participant.programming_skills.values())
 
 
 def filter_by_availability(participants: List[Participant], required_periods: List[str]) -> List[Participant]:
-    """Filtra participantes que tienen disponibilidad en al menos 3 períodos."""
     available_participants = []
     for p in participants:
         available_periods = sum(1 for period in required_periods if p.availability.get(period, False))
@@ -77,7 +73,6 @@ def filter_by_availability(participants: List[Participant], required_periods: Li
 
 # Funciones de agrupamiento
 def group_by_objective(participants: List[Participant]) -> Dict[str, List[Participant]]:
-    """Separa a los participantes según su objetivo (ganar o aprender/divertirse)."""
     win_group = []
     learn_fun_group = []
     for p in participants:
@@ -89,7 +84,6 @@ def group_by_objective(participants: List[Participant]) -> Dict[str, List[Partic
 
 
 def group_learn_fun_by_interests_and_friends(participants: List[Participant]) -> List[List[Participant]]:
-    """Agrupa a los participantes que quieren aprender o hacer amigos según sus intereses y amigos, con un límite de 4 personas por grupo."""
     groups = []
     available_participants = participants.copy()
     
@@ -123,10 +117,8 @@ def group_learn_fun_by_interests_and_friends(participants: List[Participant]) ->
 
 
 def group_win_by_availability_and_balance(participants: List[Participant], required_periods: List[str]) -> List[List[Participant]]:
-    """Agrupa a los participantes que quieren ganar según su disponibilidad, nivel de experiencia y habilidades, con un límite de 4 personas por grupo."""
     available_participants = filter_by_availability(participants, required_periods)
-    
-    # Agrupar por disponibilidad
+
     groups = []
     assigned_ids = set()
     
@@ -136,15 +128,14 @@ def group_win_by_availability_and_balance(participants: List[Participant], requi
         current_group.append(current_participant)
         assigned_ids.add(current_participant.id)
         
-        # Añadir amigos
+
         for friend_id in current_participant.friend_registration:
             for i, part in enumerate(available_participants):
                 if part.id == friend_id and part.id not in assigned_ids:
                     current_group.append(available_participants.pop(i))
                     assigned_ids.add(part.id)
                     break
-        
-        # Balancear los grupos según puntos de experiencia y habilidades de programación
+
         current_experience_points = sum(get_experience_points(p) for p in current_group)
         current_skill_points = sum(get_total_programming_skill(p) for p in current_group)
         
@@ -154,7 +145,6 @@ def group_win_by_availability_and_balance(participants: List[Participant], requi
                 current_group.append(p)
                 available_participants.remove(p)
         
-        # Asegurarse de que no haya más de 4 personas en el grupo
         if len(current_group) > 4:
             current_group = current_group[:4]
         
@@ -163,32 +153,31 @@ def group_win_by_availability_and_balance(participants: List[Participant], requi
     return groups
 
 
-# Función principal para ejecutar el código
 def main():
     try:
         participants = load_participants("prueba.json")
         
-        # Separar por objetivo (win vs. learn_fun)
+
         objective_groups = group_by_objective(participants)
         
-        # Agrupar los que quieren aprender/fun/amigos por intereses y amigos
+
         learn_fun_groups = group_learn_fun_by_interests_and_friends(objective_groups["learn_fun"])
         
-        # Agrupar los que quieren ganar por disponibilidad, nivel de experiencia y habilidades
+
         required_periods = ["Saturday morning", "Saturday afternoon", "Saturday night", "Sunday morning", "Sunday afternoon"]
         win_groups = group_win_by_availability_and_balance(objective_groups["win"], required_periods)
         
-        # Imprimir los grupos de participantes que quieren aprender/fun/amigos
-        print("\nGrupos de participantes que quieren aprender/fun/amigos:")
+
+        print("\nGroups of participants that wanna fun/learn/make friends:")
         for i, group in enumerate(learn_fun_groups):
-            print(f"Grupo {i+1}:")
+            print(f"Group {i+1}:")
             for participant in group:
                 print(f"    - {participant.name} (ID: {participant.id})")
         
         # Imprimir los grupos de participantes que quieren ganar
-        print("\nGrupos de participantes que quieren ganar:")
+        print("\nGrupos that wanna win:")
         for i, group in enumerate(win_groups):
-            print(f"Grupo {i+1}:")
+            print(f"Group {i+1}:")
             for participant in group:
                 print(f"    - {participant.name} (ID: {participant.id})")
     
